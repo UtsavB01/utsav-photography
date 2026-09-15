@@ -1,29 +1,43 @@
 /* ============================================================
    UTSAV BISWAS — NATURE PHOTOGRAPHY
-   Main stylesheet
    ============================================================ */
 
 
 /* ============================================================
-   01. ROOT / RESET
+   01. ROOT
    ============================================================ */
 
 :root {
+
   --paper: #f2f0e9;
   --paper-light: #f7f5ef;
+
   --ink: #151613;
   --ink-soft: #252722;
+
   --muted: #70736b;
+
   --line: #d6d4ca;
+
   --white: #ffffff;
 
   --max-width: 1240px;
-  --reading-width: 600px;
 
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: Arial, Helvetica, sans-serif;
+  --serif:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  --sans:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
+
+/* ============================================================
+   02. RESET
+   ============================================================ */
 
 *,
 *::before,
@@ -33,18 +47,23 @@
 
 
 html {
+
   margin: 0;
   padding: 0;
+
   scroll-behavior: smooth;
+
   overflow-x: hidden;
 }
 
 
 body {
+
   margin: 0;
   padding: 0;
 
   background: var(--paper);
+
   color: var(--ink);
 
   font-family: var(--sans);
@@ -52,12 +71,15 @@ body {
   overflow-x: hidden;
 
   -webkit-font-smoothing: antialiased;
+
   text-rendering: optimizeLegibility;
 }
 
 
 img {
+
   display: block;
+
   max-width: 100%;
 }
 
@@ -81,10 +103,11 @@ select {
 
 
 /* ============================================================
-   02. HEADER / NAVIGATION
+   03. HEADER / NAVIGATION
    ============================================================ */
 
 .site-header {
+
   position: absolute;
 
   top: 0;
@@ -98,10 +121,13 @@ select {
 
 
 .site-nav {
+
   width: 100%;
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
   padding: 28px 5vw;
@@ -111,15 +137,19 @@ select {
 
 
 .brand {
+
   display: inline-block;
 
   color: inherit;
+
   text-decoration: none;
 
   font-size: 13px;
+
   font-weight: 500;
 
   letter-spacing: 0.18em;
+
   text-transform: uppercase;
 
   white-space: nowrap;
@@ -127,8 +157,12 @@ select {
 
 
 .nav-links {
+
   display: flex;
+
   align-items: center;
+
+  justify-content: flex-end;
 
   gap: 30px;
 
@@ -137,13 +171,17 @@ select {
 
 
 .nav-links a {
+
   position: relative;
 
   color: inherit;
+
   text-decoration: none;
 
   font-size: 11px;
+
   letter-spacing: 0.14em;
+
   text-transform: uppercase;
 
   white-space: nowrap;
@@ -151,6 +189,7 @@ select {
 
 
 .nav-links a::after {
+
   content: "";
 
   position: absolute;
@@ -173,15 +212,17 @@ select {
 
 
 /* ============================================================
-   03. HERO
+   04. HERO
    ============================================================ */
 
 .hero {
+
   position: relative;
 
   min-height: 100svh;
 
   display: flex;
+
   align-items: flex-end;
 
   overflow: hidden;
@@ -191,20 +232,24 @@ select {
 
 
 .hero-image {
+
   position: absolute;
 
   inset: 0;
 
-  background-image: url("../images/hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image:
+    url("../images/hero.jpg");
 
-  transform: scale(1.001);
+  background-position: center;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
 
 
 .hero-overlay {
+
   position: absolute;
 
   inset: 0;
@@ -220,11 +265,13 @@ select {
 
 
 .hero-content {
+
   position: relative;
 
   z-index: 2;
 
   width: 100%;
+
   max-width: 1050px;
 
   padding:
@@ -235,19 +282,24 @@ select {
 
 
 .eyebrow {
+
   margin: 0 0 20px;
 
-  color: rgba(255, 255, 255, 0.82);
+  color:
+    rgba(255, 255, 255, 0.82);
 
   font-size: 11px;
+
   line-height: 1.4;
 
   letter-spacing: 0.22em;
+
   text-transform: uppercase;
 }
 
 
 .hero h1 {
+
   max-width: 1000px;
 
   margin: 0 0 30px;
@@ -255,7 +307,10 @@ select {
   color: var(--white);
 
   font-family: var(--serif);
-  font-size: clamp(58px, 9vw, 138px);
+
+  font-size:
+    clamp(58px, 9vw, 138px);
+
   font-weight: 400;
 
   line-height: 0.88;
@@ -265,20 +320,26 @@ select {
 
 
 .hero-description {
+
   max-width: 570px;
 
   margin: 0 0 32px;
 
-  color: rgba(255, 255, 255, 0.88);
+  color:
+    rgba(255, 255, 255, 0.88);
 
   font-size: 15px;
+
   line-height: 1.7;
 }
 
 
 .hero-link {
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 12px;
 
   color: var(--white);
@@ -287,26 +348,34 @@ select {
 
   padding-bottom: 9px;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.65);
 
   font-size: 11px;
+
   letter-spacing: 0.16em;
+
   text-transform: uppercase;
 }
 
 
 .hero-link span {
+
   font-size: 15px;
+
   line-height: 1;
 }
 
 
 /* ============================================================
-   04. GENERAL SECTIONS
+   05. GENERAL SECTIONS
    ============================================================ */
 
 .section {
+
   width: 100%;
+
   max-width: var(--max-width);
 
   margin: 0 auto;
@@ -318,10 +387,14 @@ select {
 
 
 .section-heading {
+
   width: 100%;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 480px);
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 480px);
 
   align-items: end;
 
@@ -332,24 +405,31 @@ select {
 
 
 .section-kicker {
+
   margin: 0;
 
   color: var(--muted);
 
   font-size: 10px;
+
   line-height: 1.4;
 
   letter-spacing: 0.22em;
+
   text-transform: uppercase;
 }
 
 
 .section-heading h2,
 .about-content h2 {
+
   margin: 10px 0 0;
 
   font-family: var(--serif);
-  font-size: clamp(40px, 5vw, 72px);
+
+  font-size:
+    clamp(40px, 5vw, 72px);
+
   font-weight: 400;
 
   line-height: 0.98;
@@ -359,6 +439,7 @@ select {
 
 
 .section-intro {
+
   max-width: 480px;
 
   margin: 0;
@@ -366,12 +447,13 @@ select {
   color: #555850;
 
   font-size: 14px;
+
   line-height: 1.75;
 }
 
 
 /* ============================================================
-   05. SELECTED WORK
+   06. SELECTED WORK
    ============================================================ */
 
 .selected-section {
@@ -380,6 +462,7 @@ select {
 
 
 .selected-grid {
+
   width: 100%;
 
   display: grid;
@@ -395,6 +478,7 @@ select {
 
 
 .selected-grid figure {
+
   position: relative;
 
   min-width: 0;
@@ -406,16 +490,19 @@ select {
 
 
 .selected-large {
+
   aspect-ratio: 1.35 / 1;
 }
 
 
 .selected-small {
+
   aspect-ratio: 0.82 / 1;
 }
 
 
 .selected-grid img {
+
   width: 100%;
   height: 100%;
 
@@ -428,6 +515,7 @@ select {
 
 
 .selected-grid figure:hover img {
+
   transform: scale(1.025);
 
   filter: brightness(0.86);
@@ -435,6 +523,7 @@ select {
 
 
 .selected-grid figcaption {
+
   position: absolute;
 
   left: 0;
@@ -454,15 +543,17 @@ select {
 
 
 .image-label {
+
   font-size: 10px;
 
   letter-spacing: 0.18em;
+
   text-transform: uppercase;
 }
 
 
 /* ============================================================
-   06. ARCHIVE
+   07. ARCHIVE
    ============================================================ */
 
 .archive-section {
@@ -476,6 +567,7 @@ select {
 
 
 .archive-grid {
+
   width: 100%;
 
   display: grid;
@@ -490,6 +582,7 @@ select {
 
 
 .archive-card {
+
   position: relative;
 
   min-width: 0;
@@ -503,6 +596,7 @@ select {
 
 
 .archive-card img {
+
   width: 100%;
   height: 100%;
 
@@ -515,6 +609,7 @@ select {
 
 
 .archive-card:hover img {
+
   transform: scale(1.035);
 
   filter: brightness(0.78);
@@ -522,12 +617,15 @@ select {
 
 
 .archive-card figcaption {
+
   position: absolute;
 
   inset: auto 0 0 0;
 
   display: flex;
+
   align-items: baseline;
+
   justify-content: space-between;
 
   gap: 15px;
@@ -553,6 +651,7 @@ select {
 
 
 .archive-card:hover figcaption {
+
   opacity: 1;
 
   transform: translateY(0);
@@ -560,6 +659,7 @@ select {
 
 
 .archive-number {
+
   font-size: 9px;
 
   letter-spacing: 0.16em;
@@ -569,6 +669,7 @@ select {
 
 
 .archive-title {
+
   font-family: var(--serif);
 
   font-size: 25px;
@@ -578,7 +679,7 @@ select {
 
 
 /* ============================================================
-   07. ACTIVITIES
+   08. ACTIVITIES
    ============================================================ */
 
 .activities-section {
@@ -587,6 +688,7 @@ select {
 
 
 .activities-grid {
+
   width: 100%;
 
   display: grid;
@@ -595,6 +697,7 @@ select {
     repeat(4, minmax(0, 1fr));
 
   column-gap: 28px;
+
   row-gap: 65px;
 
   align-items: start;
@@ -602,21 +705,18 @@ select {
 
 
 /*
-   IMPORTANT:
+   Posters are deliberately kept independent from
+   the photography grids.
 
-   Activity posters deliberately do NOT use:
-       height: 100%;
-       object-fit: cover;
-
-   That was one of the causes of the previous visual problems.
-
-   Posters retain their natural proportions.
+   They are NOT cropped.
 */
 
 .activity-card {
+
   min-width: 0;
 
   width: 100%;
+
   max-width: 180px;
 
   margin: 0 auto;
@@ -624,10 +724,13 @@ select {
 
 
 .activity-image {
+
   width: 100%;
 
   display: flex;
+
   align-items: flex-start;
+
   justify-content: center;
 
   overflow: hidden;
@@ -637,12 +740,15 @@ select {
 
 
 .activity-image img {
+
   display: block;
 
   width: 100%;
+
   height: auto;
 
   max-width: 180px;
+
   max-height: 300px;
 
   object-fit: contain;
@@ -654,6 +760,7 @@ select {
 
 
 .activity-card:hover .activity-image img {
+
   transform: translateY(-3px);
 
   opacity: 0.92;
@@ -661,11 +768,13 @@ select {
 
 
 .activity-card figcaption {
+
   padding-top: 17px;
 }
 
 
 .activity-title {
+
   display: block;
 
   color: var(--ink);
@@ -673,11 +782,13 @@ select {
   font-family: var(--serif);
 
   font-size: 18px;
+
   line-height: 1.15;
 }
 
 
 .activity-date {
+
   display: block;
 
   margin-top: 7px;
@@ -687,18 +798,21 @@ select {
   font-size: 9px;
 
   letter-spacing: 0.15em;
+
   text-transform: uppercase;
 }
 
 
 /* ============================================================
-   08. ABOUT
+   09. ABOUT
    ============================================================ */
 
 .about-section {
+
   width: 100%;
 
   background: var(--ink);
+
   color: var(--white);
 
   padding:
@@ -708,7 +822,9 @@ select {
 
 
 .about-inner {
+
   width: 100%;
+
   max-width: var(--max-width);
 
   margin: 0 auto;
@@ -721,11 +837,13 @@ select {
 
   align-items: center;
 
-  gap: clamp(55px, 8vw, 130px);
+  gap:
+    clamp(55px, 8vw, 130px);
 }
 
 
 .about-image {
+
   width: 100%;
 
   overflow: hidden;
@@ -735,7 +853,9 @@ select {
 
 
 .about-image img {
+
   width: 100%;
+
   height: auto;
 
   max-height: 720px;
@@ -745,16 +865,20 @@ select {
 
 
 .about-content {
+
   min-width: 0;
 }
 
 
 .about-content .section-kicker {
-  color: rgba(255, 255, 255, 0.48);
+
+  color:
+    rgba(255, 255, 255, 0.48);
 }
 
 
 .about-content h2 {
+
   color: var(--white);
 
   margin-bottom: 35px;
@@ -762,6 +886,7 @@ select {
 
 
 .about-text {
+
   max-width: 650px;
 
   margin: 0 0 20px;
@@ -769,13 +894,17 @@ select {
   color: #c4c6bd;
 
   font-size: 16px;
+
   line-height: 1.85;
 }
 
 
 .about-link {
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 12px;
 
   margin-top: 18px;
@@ -786,11 +915,14 @@ select {
 
   text-decoration: none;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.45);
 
   font-size: 10px;
 
   letter-spacing: 0.16em;
+
   text-transform: uppercase;
 }
 
@@ -801,10 +933,205 @@ select {
 
 
 /* ============================================================
-   09. FOOTER
+   10. MORE ABOUT ME
+   ============================================================ */
+
+.more-about-section {
+
+  width: 100%;
+
+  background: var(--paper-light);
+
+  padding:
+    clamp(95px, 11vw, 145px)
+    5vw;
+
+  border-top:
+    1px solid
+    var(--line);
+}
+
+
+.more-about-inner {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.75fr)
+    minmax(0, 1.25fr);
+
+  gap:
+    clamp(60px, 9vw, 140px);
+
+  align-items: start;
+}
+
+
+/* ------------------------------------------------------------
+   More About — Heading
+   ------------------------------------------------------------ */
+
+.more-about-heading {
+
+  min-width: 0;
+}
+
+
+.more-about-heading h2 {
+
+  margin: 12px 0 32px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(42px, 5vw, 70px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.04em;
+}
+
+
+.more-about-intro {
+
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #62655d;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* ------------------------------------------------------------
+   More About — Link Layout
+   ------------------------------------------------------------ */
+
+.more-about-links {
+
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  column-gap: 55px;
+
+  row-gap: 65px;
+}
+
+
+.more-about-group {
+
+  min-width: 0;
+}
+
+
+.more-about-group h3 {
+
+  margin: 0 0 22px;
+
+  color: var(--ink);
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+/* ------------------------------------------------------------
+   More About — External Links
+   ------------------------------------------------------------ */
+
+.external-link {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 14px 0;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.16);
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+
+  transition:
+    padding-left 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.external-link > span:first-child {
+
+  min-width: 0;
+}
+
+
+.external-link > span:last-child {
+
+  flex: 0 0 auto;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.external-link:hover {
+
+  padding-left: 7px;
+}
+
+
+.external-link:hover > span:last-child {
+
+  transform:
+    translate(4px, -4px);
+
+  color: var(--ink);
+}
+
+
+/* ============================================================
+   11. FOOTER
    ============================================================ */
 
 .site-footer {
+
   width: 100%;
 
   background: #0d0e0c;
@@ -819,7 +1146,9 @@ select {
 
 
 .footer-inner {
+
   width: 100%;
+
   max-width: var(--max-width);
 
   margin: 0 auto;
@@ -827,6 +1156,7 @@ select {
   display: flex;
 
   align-items: flex-end;
+
   justify-content: space-between;
 
   gap: 50px;
@@ -834,11 +1164,13 @@ select {
 
 
 .footer-main {
+
   min-width: 0;
 }
 
 
 .footer-kicker {
+
   margin: 0 0 18px;
 
   color: #777b72;
@@ -846,16 +1178,19 @@ select {
   font-size: 10px;
 
   letter-spacing: 0.2em;
+
   text-transform: uppercase;
 }
 
 
 .footer-main h2 {
+
   margin: 0;
 
   font-family: var(--serif);
 
-  font-size: clamp(34px, 5vw, 64px);
+  font-size:
+    clamp(34px, 5vw, 64px);
 
   font-weight: 400;
 
@@ -866,6 +1201,7 @@ select {
 
 
 .footer-side {
+
   flex: 0 0 auto;
 
   color: #777b72;
@@ -879,27 +1215,38 @@ select {
 
 
 .footer-side p {
+
   margin: 0;
 }
 
 
 .footer-side p + p {
+
   margin-top: 5px;
 }
 
 
 .footer-bottom {
+
   width: 100%;
+
   max-width: var(--max-width);
 
-  margin: 80px auto 0;
+  margin:
+    80px
+    auto
+    0;
 
   padding-top: 20px;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.13);
 
   display: flex;
+
   align-items: center;
+
   justify-content: flex-end;
 
   gap: 25px;
@@ -907,6 +1254,7 @@ select {
 
 
 .footer-bottom a {
+
   color: #9b9e96;
 
   text-decoration: none;
@@ -914,6 +1262,7 @@ select {
   font-size: 9px;
 
   letter-spacing: 0.14em;
+
   text-transform: uppercase;
 
   transition: color 0.2s ease;
@@ -921,35 +1270,50 @@ select {
 
 
 .footer-bottom a:hover {
+
   color: var(--white);
 }
 
 
 /* ============================================================
-   10. LARGE TABLET
+   12. LARGE TABLET
    ============================================================ */
 
 @media (max-width: 950px) {
 
+
   .site-nav {
+
     padding-left: 4vw;
+
     padding-right: 4vw;
   }
 
 
   .nav-links {
-    gap: 20px;
+
+    gap: 18px;
+  }
+
+
+  .nav-links a {
+
+    font-size: 10px;
   }
 
 
   .section-heading {
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 380px);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(240px, 380px);
 
     column-gap: 40px;
   }
 
 
   .selected-grid {
+
     grid-template-columns:
       minmax(0, 1.35fr)
       minmax(0, 0.8fr);
@@ -957,6 +1321,7 @@ select {
 
 
   .activities-grid {
+
     grid-template-columns:
       repeat(4, minmax(0, 1fr));
 
@@ -965,47 +1330,72 @@ select {
 
 
   .activity-card {
+
     max-width: 165px;
   }
 
 
   .activity-image img {
+
     max-width: 165px;
   }
 
 
   .about-inner {
+
     gap: 55px;
+  }
+
+
+  .more-about-inner {
+
+    gap: 60px;
+  }
+
+
+  .more-about-links {
+
+    column-gap: 35px;
   }
 
 }
 
 
 /* ============================================================
-   11. TABLET
+   13. TABLET
    ============================================================ */
 
 @media (max-width: 760px) {
 
+
   .site-nav {
+
     padding-top: 22px;
+
     padding-bottom: 22px;
   }
 
 
   .nav-links {
-    gap: 15px;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
   }
 
 
   .nav-links a {
-    font-size: 9px;
 
-    letter-spacing: 0.1em;
+    font-size: 8px;
+
+    letter-spacing: 0.08em;
   }
 
 
   .hero-content {
+
     padding:
       0
       7vw
@@ -1014,11 +1404,14 @@ select {
 
 
   .hero h1 {
-    font-size: clamp(55px, 12vw, 90px);
+
+    font-size:
+      clamp(55px, 12vw, 90px);
   }
 
 
   .section {
+
     padding:
       85px
       6vw;
@@ -1026,6 +1419,7 @@ select {
 
 
   .section-heading {
+
     display: block;
 
     margin-bottom: 42px;
@@ -1033,57 +1427,62 @@ select {
 
 
   .section-heading h2 {
+
     margin-bottom: 30px;
   }
 
 
   .section-intro {
+
     max-width: 520px;
   }
 
 
   .selected-grid {
+
     grid-template-columns: 1fr;
   }
 
 
   .selected-large,
   .selected-small {
+
     aspect-ratio: 1.25 / 1;
   }
 
 
   .archive-grid {
+
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
   }
 
 
-  /*
-     Keep four activity columns until this breakpoint.
-     Posters therefore remain visually small and editorial.
-  */
-
   .activities-grid {
+
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
 
     column-gap: 30px;
+
     row-gap: 55px;
   }
 
 
   .activity-card {
+
     max-width: 180px;
   }
 
 
   .activity-image img {
+
     max-width: 180px;
   }
 
 
   .about-section {
+
     padding:
       85px
       6vw;
@@ -1091,6 +1490,7 @@ select {
 
 
   .about-inner {
+
     grid-template-columns: 1fr;
 
     gap: 55px;
@@ -1098,16 +1498,50 @@ select {
 
 
   .about-image {
+
     max-width: 600px;
   }
 
 
+  .more-about-section {
+
+    padding:
+      85px
+      6vw;
+  }
+
+
+  .more-about-inner {
+
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+
+  .more-about-heading h2 {
+
+    font-size:
+      clamp(42px, 10vw, 62px);
+  }
+
+
+  .more-about-links {
+
+    grid-template-columns: 1fr;
+
+    row-gap: 48px;
+  }
+
+
   .footer-inner {
+
     display: block;
   }
 
 
   .footer-side {
+
     margin-top: 40px;
 
     text-align: left;
@@ -1115,6 +1549,7 @@ select {
 
 
   .footer-bottom {
+
     justify-content: flex-start;
 
     flex-wrap: wrap;
@@ -1126,12 +1561,14 @@ select {
 
 
 /* ============================================================
-   12. MOBILE
+   14. MOBILE
    ============================================================ */
 
 @media (max-width: 520px) {
 
+
   .site-nav {
+
     align-items: flex-start;
 
     padding:
@@ -1141,30 +1578,35 @@ select {
 
 
   .brand {
+
     font-size: 11px;
   }
 
 
   .nav-links {
-    gap: 11px;
 
-    padding-top: 1px;
+    gap: 8px;
+
+    max-width: 70%;
   }
 
 
   .nav-links a {
-    font-size: 8px;
 
-    letter-spacing: 0.07em;
+    font-size: 7px;
+
+    letter-spacing: 0.06em;
   }
 
 
   .hero {
+
     min-height: 92svh;
   }
 
 
   .hero-content {
+
     padding:
       0
       7vw
@@ -1173,6 +1615,7 @@ select {
 
 
   .eyebrow {
+
     font-size: 9px;
 
     letter-spacing: 0.16em;
@@ -1180,13 +1623,16 @@ select {
 
 
   .hero h1 {
-    font-size: clamp(48px, 15vw, 76px);
+
+    font-size:
+      clamp(48px, 15vw, 76px);
 
     letter-spacing: -0.05em;
   }
 
 
   .hero-description {
+
     max-width: 450px;
 
     font-size: 14px;
@@ -1194,6 +1640,7 @@ select {
 
 
   .section {
+
     padding:
       70px
       6vw;
@@ -1202,11 +1649,14 @@ select {
 
   .section-heading h2,
   .about-content h2 {
-    font-size: clamp(38px, 11vw, 58px);
+
+    font-size:
+      clamp(38px, 11vw, 58px);
   }
 
 
   .archive-grid {
+
     grid-template-columns: 1fr;
 
     gap: 4px;
@@ -1214,11 +1664,13 @@ select {
 
 
   .archive-card {
+
     aspect-ratio: 1.15 / 1;
   }
 
 
   .archive-card figcaption {
+
     opacity: 1;
 
     transform: none;
@@ -1226,20 +1678,24 @@ select {
 
 
   .activities-grid {
+
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
 
     column-gap: 18px;
+
     row-gap: 45px;
   }
 
 
   .activity-card {
+
     max-width: 150px;
   }
 
 
   .activity-image img {
+
     max-width: 150px;
 
     max-height: 250px;
@@ -1247,16 +1703,19 @@ select {
 
 
   .activity-title {
+
     font-size: 16px;
   }
 
 
   .activity-date {
+
     font-size: 8px;
   }
 
 
   .about-section {
+
     padding:
       70px
       6vw;
@@ -1264,11 +1723,36 @@ select {
 
 
   .about-text {
+
     font-size: 15px;
   }
 
 
+  .more-about-section {
+
+    padding:
+      70px
+      6vw;
+  }
+
+
+  .more-about-heading h2 {
+
+    font-size:
+      clamp(40px, 12vw, 56px);
+  }
+
+
+  .external-link {
+
+    font-size: 13px;
+
+    padding: 13px 0;
+  }
+
+
   .site-footer {
+
     padding:
       70px
       6vw
@@ -1277,11 +1761,13 @@ select {
 
 
   .footer-main h2 {
+
     font-size: 43px;
   }
 
 
   .footer-bottom {
+
     gap: 17px;
   }
 
@@ -1289,32 +1775,38 @@ select {
 
 
 /* ============================================================
-   13. VERY SMALL PHONES
+   15. VERY SMALL PHONES
    ============================================================ */
 
 @media (max-width: 360px) {
 
+
   .nav-links {
-    gap: 7px;
+
+    gap: 6px;
   }
 
 
   .nav-links a {
-    font-size: 7px;
+
+    font-size: 6.5px;
   }
 
 
   .activities-grid {
+
     column-gap: 12px;
   }
 
 
   .activity-card {
+
     max-width: 135px;
   }
 
 
   .activity-image img {
+
     max-width: 135px;
   }
 
@@ -1322,12 +1814,14 @@ select {
 
 
 /* ============================================================
-   14. REDUCED MOTION
+   16. REDUCED MOTION
    ============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
 
+
   html {
+
     scroll-behavior: auto;
   }
 
@@ -1335,8 +1829,11 @@ select {
   *,
   *::before,
   *::after {
+
     transition-duration: 0.01ms !important;
+
     animation-duration: 0.01ms !important;
+
     animation-iteration-count: 1 !important;
   }
 
@@ -1344,17 +1841,15 @@ select {
 
 
 /* ============================================================
-   15. PRINT / PDF SAFETY
-   ============================================================
-
-   This prevents browser print/PDF rendering from creating
-   the horizontal slicing/overflow seen in the previous version.
+   17. PRINT / PDF SAFETY
    ============================================================ */
 
 @media print {
 
+
   html,
   body {
+
     width: 100%;
 
     overflow: visible;
@@ -1362,27 +1857,34 @@ select {
 
 
   .site-header {
+
     position: static;
   }
 
 
   .site-nav {
+
     color: var(--ink);
   }
 
 
   .hero {
+
     min-height: 90vh;
 
     break-inside: avoid;
+
     page-break-inside: avoid;
   }
 
 
   .section,
   .about-section,
+  .more-about-section,
   .site-footer {
+
     break-inside: avoid;
+
     page-break-inside: avoid;
   }
 
@@ -1390,13 +1892,17 @@ select {
   .selected-grid,
   .archive-grid,
   .activities-grid {
+
     break-inside: avoid;
+
     page-break-inside: avoid;
   }
 
 
   .activity-card {
+
     break-inside: avoid;
+
     page-break-inside: avoid;
 
     max-width: 150px;
@@ -1404,15 +1910,19 @@ select {
 
 
   .activity-image img {
+
     width: 100%;
+
     height: auto;
 
     max-width: 150px;
+
     max-height: none;
   }
 
 
   .archive-card figcaption {
+
     opacity: 1;
 
     transform: none;
@@ -1420,6 +1930,7 @@ select {
 
 
   .footer-bottom {
+
     display: none;
   }
 
