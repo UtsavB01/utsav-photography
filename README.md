@@ -1,1 +1,0 @@
-Replace the JPGs in the images folder with your own keeping the same filenames.
