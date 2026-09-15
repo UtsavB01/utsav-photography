@@ -403,152 +403,213 @@ h2 {
 
 
 /* =========================================================
-   03 / ACTIVITIES
+   ACTIVITIES
    =========================================================
    
-   These rules intentionally override the normal photographic
-   .tile behaviour.
+   IMPORTANT:
+   
+   Activities deliberately does NOT use the normal .grid
+   photographic layout.
 
-   Activity posters are documents rather than landscape
-   photographs, so:
-   - they are NOT cropped
-   - their original aspect ratio is preserved
-   - captions sit below the poster
-   - no dark background/gaps between posters
-   - posters use a dedicated two-column editorial layout
+   Posters are documents with their own aspect ratios.
+   Every poster therefore:
+   
+   - keeps its full original aspect ratio
+   - is never cropped
+   - occupies exactly one grid column
+   - has no forced height
+   - has its caption below the image
    ========================================================= */
 
 .activities-section {
+    max-width: var(--max);
+
+    margin-left: auto;
+    margin-right: auto;
+
     background: var(--paper);
 }
 
-
-/* Section 03 has a little more breathing room */
-
 .activities-section .section-head {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
 }
 
 
-/* Two-column poster layout */
+/* Dedicated Activities grid */
 
-.activities-grid {
-    display: grid;
+.activities-section .activities-grid {
+    display: grid !important;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
 
-    column-gap: clamp(28px, 4vw, 64px);
+    gap:
+        70px
+        clamp(30px, 5vw, 70px) !important;
 
-    row-gap: clamp(55px, 7vw, 100px);
-
-    background: transparent;
-}
-
-
-/* Reset the normal photographic tile behaviour */
-
-.activities-grid .tile {
-    grid-column: auto !important;
+    width: 100%;
 
     margin: 0;
 
+    padding: 0;
+
+    background: transparent !important;
+
+    align-items: start;
+}
+
+
+/* Each activity item */
+
+.activities-section .activities-grid .tile {
+    display: block;
+
+    grid-column: auto !important;
+
+    grid-row: auto !important;
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: auto;
+
+    margin: 0;
+
+    padding: 0;
+
     overflow: visible;
 
-    background: transparent;
-
     position: relative;
+
+    background: transparent;
 
     align-self: start;
 }
 
 
-/* Full poster — never crop */
+/* Poster image */
 
-.activities-grid .tile img {
-    width: 100%;
-
-    height: auto;
-
-    min-height: 0;
-
-    aspect-ratio: auto;
-
-    object-fit: contain;
-
+.activities-section .activities-grid .tile img {
     display: block;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-width: 0;
+
+    min-height: 0 !important;
+
+    max-width: 100%;
+
+    max-height: none;
+
+    aspect-ratio: auto !important;
+
+    object-fit: contain !important;
+
+    object-position: center;
+
+    margin: 0;
+
+    padding: 0;
 
     background: transparent;
 
+    transform: none;
+
+    filter: none;
+
     transition:
-        transform .6s ease,
-        filter .6s ease;
+        transform .5s ease,
+        filter .5s ease;
 }
 
 
-/* Subtle interaction */
+/* Very subtle hover — no cropping */
 
-.activities-grid .tile:hover img {
+.activities-section .activities-grid .tile:hover img {
     transform: translateY(-4px);
 
     filter: brightness(.97);
 }
 
 
-/* Activity caption is deliberately outside the image */
+/* Activity caption */
 
-.activities-grid .tile figcaption {
-    position: static;
+.activities-section .activities-grid .tile figcaption {
+    position: static !important;
 
-    padding: 18px 0 0;
+    display: block;
+
+    width: 100%;
 
     margin: 0;
 
+    padding: 18px 0 0;
+
     color: var(--ink);
 
-    background: transparent;
+    background: transparent !important;
 
-    opacity: 1;
+    opacity: 1 !important;
 
-    transform: none;
+    transform: none !important;
 
-    transition: none;
+    transition: none !important;
 }
 
 
 /* Activity title */
 
-.activities-grid .tile .title {
+.activities-section .activities-grid .tile .title {
     font-family: Georgia, serif;
 
-    font-size: clamp(21px, 2vw, 27px);
+    font-size: clamp(22px, 2vw, 28px);
+
+    font-weight: 400;
 
     line-height: 1.15;
+
+    color: var(--ink);
+
+    margin: 0;
 }
 
 
-/* Activity date / metadata */
+/* Activity metadata */
 
-.activities-grid .tile .meta {
+.activities-section .activities-grid .tile .meta {
+    display: block;
+
+    margin-top: 7px;
+
     color: var(--muted);
 
     font-size: 10px;
+
+    line-height: 1.4;
 
     letter-spacing: .14em;
 
     text-transform: uppercase;
 
-    margin-top: 7px;
-
     opacity: 1;
 }
 
 
-/* No hover caption behaviour */
+/* Remove all nth-child behaviour from Activities */
 
-.activities-grid .tile:hover figcaption {
-    opacity: 1;
-
-    transform: none;
+.activities-section .activities-grid .tile:nth-child(1),
+.activities-section .activities-grid .tile:nth-child(2),
+.activities-section .activities-grid .tile:nth-child(3),
+.activities-section .activities-grid .tile:nth-child(4),
+.activities-section .activities-grid .tile:nth-child(5),
+.activities-section .activities-grid .tile:nth-child(6),
+.activities-section .activities-grid .tile:nth-child(7),
+.activities-section .activities-grid .tile:nth-child(8) {
+    grid-column: auto !important;
 }
 
 
@@ -1020,7 +1081,7 @@ h2 {
 
 
 /* =========================================================
-   MOBILE — GENERAL
+   TABLET / MOBILE
    ========================================================= */
 
 @media (max-width: 800px) {
@@ -1084,35 +1145,35 @@ h2 {
 
 
     /* =====================================================
-       ACTIVITIES — TABLET / MOBILE
+       ACTIVITIES — TABLET
        ===================================================== */
 
-    .activities-grid {
-        grid-template-columns: 1fr;
+    .activities-section .activities-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
 
-        row-gap: 65px;
+        column-gap: 30px !important;
+
+        row-gap: 55px !important;
     }
 
-    .activities-grid .tile {
+    .activities-section .activities-grid .tile,
+    .activities-section .activities-grid .tile:nth-child(n) {
         grid-column: auto !important;
-    }
 
-    .activities-grid .tile img {
         width: 100%;
 
-        height: auto;
-
-        min-height: 0;
-
-        object-fit: contain;
+        min-width: 0;
     }
 
-    .activities-grid .tile figcaption {
-        padding-top: 16px;
-    }
+    .activities-section .activities-grid .tile img {
+        width: 100% !important;
 
-    .activities-grid .tile .title {
-        font-size: 24px;
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        object-fit: contain !important;
     }
 
 
@@ -1158,7 +1219,7 @@ h2 {
 
 
 /* =========================================================
-   MOBILE — SMALL PHONES
+   SMALL PHONES
    ========================================================= */
 
 @media (max-width: 500px) {
@@ -1184,16 +1245,35 @@ h2 {
     }
 
 
-    /* Activities remain single-column on small phones */
+    /* =====================================================
+       ACTIVITIES — PHONE
+       ===================================================== */
 
-    .activities-grid {
-        grid-template-columns: 1fr;
+    .activities-section .activities-grid {
+        grid-template-columns: 1fr !important;
 
-        row-gap: 55px;
+        gap: 55px !important;
     }
 
-    .activities-grid .tile {
+    .activities-section .activities-grid .tile,
+    .activities-section .activities-grid .tile:nth-child(n) {
         grid-column: auto !important;
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .activities-section .activities-grid .tile img {
+        width: 100% !important;
+
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        max-width: 100%;
+
+        object-fit: contain !important;
     }
 
 }
