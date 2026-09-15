@@ -1,249 +1,309 @@
 /* =========================================================
    UTSAV BISWAS — NATURE PHOTOGRAPHY
-   Editorial / Minimal Portfolio Stylesheet
+   Editorial Portfolio
    ========================================================= */
 
 
 /* =========================================================
-   VARIABLES
+   01. ROOT / GLOBAL
    ========================================================= */
 
 :root {
   --ink: #171814;
   --paper: #f3f1e9;
-  --paper-2: #ebe9e0;
+  --paper-dark: #e9e7de;
   --muted: #73766c;
-  --line: #d5d3c9;
+  --line: #d4d2c8;
+  --dark: #171914;
 
-  --max: 1200px;
+  --content-width: 1180px;
+  --page-padding: 32px;
 }
 
-
-/* =========================================================
-   RESET
-   ========================================================= */
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  padding: 0;
+
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  overflow-x: hidden;
 }
 
 img {
+  display: block;
   max-width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 a {
   color: inherit;
 }
 
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 
 /* =========================================================
-   ACCESSIBILITY
+   02. ACCESSIBILITY
    ========================================================= */
 
 .skip {
   position: absolute;
   left: -9999px;
+  top: auto;
 }
 
 .skip:focus {
+  position: fixed;
+
   left: 20px;
   top: 20px;
-  z-index: 999;
+
+  z-index: 9999;
+
+  padding: 12px 16px;
+
   background: #fff;
-  padding: 10px;
+  color: #111;
+
+  text-decoration: none;
 }
 
 
 /* =========================================================
-   NAVIGATION
+   03. NAVIGATION
    ========================================================= */
 
 .site-nav {
   position: fixed;
-  z-index: 50;
+
   top: 0;
   left: 0;
   right: 0;
+
+  z-index: 100;
+
+  height: 72px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 22px 4vw;
+  padding:
+    0
+    max(
+      var(--page-padding),
+      calc((100vw - var(--content-width)) / 2)
+    );
 
   color: #fff;
 
-  /*
-   * This creates the subtle editorial navigation effect
-   * where the navigation remains readable over both
-   * light and dark photographs.
-   */
   mix-blend-mode: difference;
 }
 
 .brand {
-  font-size: 13px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  display: inline-block;
+
+  color: inherit;
+
   text-decoration: none;
+
+  font-size: 11px;
+
+  letter-spacing: 0.25em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  align-items: center;
+
+  gap: 28px;
 }
 
 .nav-links a {
+  color: inherit;
+
   text-decoration: none;
-  font-size: 10px;
-  letter-spacing: 0.15em;
+
+  font-size: 9px;
+
+  letter-spacing: 0.16em;
+
   text-transform: uppercase;
+
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.65;
 }
 
 
 /* =========================================================
-   HERO
+   04. HERO
    ========================================================= */
 
 .hero {
-  min-height: 72vh;
-
   position: relative;
+
+  min-height: 72vh;
 
   display: flex;
   align-items: flex-end;
 
   background:
     #20231f
-    url('../images/hero.jpg')
-    center / cover
+    url("../images/hero.jpg")
+    center center / cover
     no-repeat;
 }
-
-
-/*
- * Dark gradient over the hero image.
- * Keeps the text readable without making
- * the photograph look heavily processed.
- */
 
 .hero::after {
   content: "";
 
   position: absolute;
+
   inset: 0;
 
   background:
     linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.05) 38%,
-      rgba(0, 0, 0, 0.70)
+      to bottom,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.08) 35%,
+      rgba(0, 0, 0, 0.72) 100%
     );
 }
 
-
 .hero-copy {
   position: relative;
+
   z-index: 2;
 
+  width: min(
+    var(--content-width),
+    calc(100% - (var(--page-padding) * 2))
+  );
+
+  margin: 0 auto;
+
+  padding-bottom: 72px;
+
   color: #fff;
-
-  width: min(var(--max), 90vw);
-
-  margin: auto;
-
-  padding: 0 0 7vh;
 }
-
-
-.eyebrow,
-.section-kicker {
-  font-size: 10px;
-  letter-spacing: 0.21em;
-  text-transform: uppercase;
-}
-
 
 .eyebrow {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+
+  font-size: 9px;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
   opacity: 0.85;
 }
 
-
 .hero h1 {
-  font-family: Georgia, serif;
+  margin: 0 0 22px;
 
-  font-size: clamp(52px, 7vw, 100px);
+  font-family: Georgia, "Times New Roman", serif;
 
-  line-height: 0.91;
+  font-size:
+    clamp(
+      54px,
+      7vw,
+      94px
+    );
 
   font-weight: 400;
 
-  margin: 0 0 24px;
+  line-height: 0.9;
 
   letter-spacing: -0.045em;
 }
 
-
 .hero p {
-  font-size: 15px;
-
-  max-width: 590px;
-
-  line-height: 1.6;
+  max-width: 570px;
 
   margin: 0 0 24px;
+
+  font-size: 14px;
+
+  line-height: 1.65;
 }
 
-
 .hero-link {
-  color: #fff;
+  display: inline-block;
 
-  text-decoration: none;
+  padding-bottom: 7px;
+
+  color: #fff;
 
   border-bottom:
     1px solid
     rgba(255, 255, 255, 0.65);
 
-  padding-bottom: 7px;
+  text-decoration: none;
 
-  font-size: 10px;
+  font-size: 9px;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.17em;
 
   text-transform: uppercase;
 }
 
 
 /* =========================================================
-   GENERAL SECTIONS
+   05. GENERAL SECTION
    ========================================================= */
 
 .section {
-  max-width: var(--max);
+  width: min(
+    var(--content-width),
+    calc(100% - (var(--page-padding) * 2))
+  );
 
-  margin: auto;
+  margin: 0 auto;
 
-  padding: 72px 0;
+  padding-top: 76px;
+
+  padding-bottom: 76px;
 }
-
 
 .section-head {
   display: flex;
 
-  align-items: end;
+  align-items: flex-end;
 
   justify-content: space-between;
 
@@ -252,62 +312,85 @@ a {
   margin-bottom: 30px;
 }
 
+.section-kicker {
+  font-size: 9px;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
+  color: var(--ink);
+}
 
 h2 {
-  font-family: Georgia, serif;
+  margin:
+    8px
+    0
+    0;
 
-  font-size: clamp(34px, 4.2vw, 58px);
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      36px,
+      4.4vw,
+      58px
+    );
 
   font-weight: 400;
 
   line-height: 0.98;
 
-  margin: 8px 0 0;
-
   letter-spacing: -0.035em;
 }
 
-
 .section-intro {
+  width: 100%;
+
   max-width: 410px;
+
+  margin: 0;
 
   color: #55584f;
 
-  line-height: 1.6;
-
   font-size: 13px;
 
-  margin: 0;
+  line-height: 1.65;
 }
 
 
 /* =========================================================
-   SELECTED WORK
+   06. SELECTED WORK
    ========================================================= */
 
 .feature {
+  width: 100%;
+
   display: grid;
 
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns:
+    minmax(0, 1.65fr)
+    minmax(0, 1fr);
 
   gap: 4px;
 
   background: var(--ink);
 }
 
-
 .feature figure {
-  margin: 0;
-
-  background: #222;
-
-  min-height: 390px;
-
   position: relative;
 
-  overflow: hidden;
-}
+  min-width: 0;
 
+  height: 390px;
+
+  overflow: hidden;
+
+  background: #222;
+}
 
 .feature img {
   width: 100%;
@@ -315,16 +398,15 @@ h2 {
 
   object-fit: cover;
 
-  display: block;
+  object-position: center;
 
-  transition: transform 0.8s;
+  transition:
+    transform 0.8s ease;
 }
-
 
 .feature figure:hover img {
   transform: scale(1.025);
 }
-
 
 .feature figcaption {
   position: absolute;
@@ -333,409 +415,16 @@ h2 {
   right: 0;
   bottom: 0;
 
-  padding: 20px;
+  padding: 22px;
 
   color: #fff;
 
   background:
     linear-gradient(
-      transparent,
-      rgba(0, 0, 0, 0.72)
-    );
-
-  font-size: 10px;
-
-  letter-spacing: 0.10em;
-
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   ARCHIVE
-   ========================================================= */
-
-.grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(6, 1fr);
-
-  gap: 3px;
-
-  background: var(--ink);
-}
-
-
-.grid .tile {
-  grid-column: auto;
-}
-
-
-.tile {
-  position: relative;
-
-  margin: 0;
-
-  overflow: hidden;
-
-  background: #252822;
-}
-
-
-.tile img {
-  width: 100%;
-
-  aspect-ratio: 1.15 / 1;
-
-  object-fit: cover;
-
-  display: block;
-
-  transition:
-    transform 0.7s,
-    filter 0.7s;
-}
-
-
-.tile:hover img {
-  transform: scale(1.035);
-
-  filter: brightness(0.82);
-}
-
-
-.tile figcaption {
-  position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  padding: 20px;
-
-  color: #fff;
-
-  background:
-    linear-gradient(
+      to bottom,
       transparent,
       rgba(0, 0, 0, 0.75)
     );
-
-  opacity: 0;
-
-  transform: translateY(8px);
-
-  transition: 0.35s;
-}
-
-
-.tile:hover figcaption {
-  opacity: 1;
-
-  transform: none;
-}
-
-
-.tile .title {
-  font-family: Georgia, serif;
-
-  font-size: 19px;
-}
-
-
-.tile .meta {
-  font-size: 8px;
-
-  letter-spacing: 0.14em;
-
-  text-transform: uppercase;
-
-  opacity: 0.8;
-
-  margin-top: 5px;
-}
-
-
-/* =========================================================
-   ACTIVITIES
-   ========================================================= */
-
-.activities-section {
-  padding-top: 72px;
-
-  padding-bottom: 88px;
-}
-
-
-/*
- * Four-column editorial layout.
- *
- * The posters themselves are deliberately narrow.
- * This gives them the "half-size" appearance from
- * the reference design while preserving every pixel
- * of the original poster proportions.
- */
-
-.activities-grid {
-  display: grid !important;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr)) !important;
-
-  gap: 30px 42px !important;
-
-  background: transparent !important;
-
-  align-items: start;
-
-  padding: 0 20px;
-}
-
-
-/*
- * Individual poster.
- *
- * max-width prevents the posters from becoming
- * unnecessarily large on wide screens.
- */
-
-.activity-card {
-  width: 100%;
-
-  max-width: 175px;
-
-  justify-self: center;
-
-  margin: 0;
-
-  background: transparent;
-
-  overflow: visible;
-}
-
-
-/*
- * IMPORTANT:
- *
- * height is auto.
- * object-fit is contain.
- *
- * Therefore portrait posters are NEVER cropped.
- */
-
-.activity-card img {
-  display: block;
-
-  width: 100%;
-
-  height: auto !important;
-
-  min-height: 0 !important;
-
-  max-width: 100%;
-
-  object-fit: contain !important;
-
-  background: transparent;
-
-  transition:
-    transform 0.45s ease;
-}
-
-
-/*
- * Very subtle hover movement.
- * No darkening and no aggressive zoom.
- */
-
-.activity-card:hover img {
-  transform: translateY(-4px);
-}
-
-
-/*
- * Poster titles are placed below
- * the image rather than over it.
- */
-
-.activity-card figcaption {
-  position: static !important;
-
-  padding: 12px 0 0 !important;
-
-  color: var(--ink) !important;
-
-  background: none !important;
-
-  opacity: 1 !important;
-
-  transform: none !important;
-
-  transition: none !important;
-}
-
-
-.activity-card .title {
-  font-family: Georgia, serif;
-
-  font-size: 15px;
-
-  line-height: 1.15;
-}
-
-
-.activity-card .meta {
-  color: var(--muted);
-
-  font-size: 8px;
-
-  letter-spacing: 0.15em;
-
-  text-transform: uppercase;
-
-  margin-top: 6px;
-}
-
-
-/* =========================================================
-   ABOUT / PHOTOGRAPHER
-   ========================================================= */
-
-.about {
-  background: #1b1d19;
-
-  color: #f0eee7;
-
-  max-width: none;
-
-  padding-left:
-    max(
-      calc((100vw - var(--max)) / 2),
-      5vw
-    );
-
-  padding-right:
-    max(
-      calc((100vw - var(--max)) / 2),
-      5vw
-    );
-}
-
-
-.about-grid {
-  max-width: var(--max);
-
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 70px;
-
-  align-items: center;
-}
-
-
-.about img {
-  width: 100%;
-
-  max-height: 580px;
-
-  object-fit: cover;
-}
-
-
-.about h2 {
-  color: #f0eee7;
-}
-
-
-.about p {
-  font-size: 15px;
-
-  line-height: 1.75;
-
-  color: #c5c6bd;
-
-  max-width: 570px;
-}
-
-
-.text-link {
-  display: inline-block;
-
-  margin-top: 12px;
-
-  color: #fff;
-
-  text-decoration: none;
-
-  border-bottom:
-    1px solid
-    #777;
-
-  padding-bottom: 7px;
-
-  font-size: 10px;
-
-  letter-spacing: 0.16em;
-
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.footer {
-  background: #111;
-
-  color: #ddd;
-
-  padding: 50px 5vw;
-}
-
-
-.footer-inner {
-  max-width: var(--max);
-
-  margin: auto;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  gap: 30px;
-
-  align-items: end;
-}
-
-
-.footer h3 {
-  font-family: Georgia, serif;
-
-  font-weight: 400;
-
-  font-size: 34px;
-
-  margin: 0 0 8px;
-}
-
-
-.footer p {
-  color: #999;
-
-  font-size: 11px;
-}
-
-
-.footer-links {
-  display: flex;
-
-  gap: 22px;
 
   font-size: 9px;
 
@@ -745,52 +434,498 @@ h2 {
 }
 
 
-.footer-links a {
-  text-decoration: none;
+/* =========================================================
+   07. ARCHIVE
+   ========================================================= */
+
+.archive-section {
+  padding-top: 38px;
+}
+
+.grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 3px;
+
+  background: var(--ink);
+}
+
+.grid .tile {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #252822;
+}
+
+.grid .tile img {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 1.15 / 1;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.grid .tile:hover img {
+  transform: scale(1.035);
+
+  filter: brightness(0.82);
+}
+
+.grid .tile figcaption {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 17px;
+
+  color: #fff;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.8)
+    );
+
+  opacity: 0;
+
+  transform: translateY(6px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.grid .tile:hover figcaption {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.grid .tile .title {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.1;
+}
+
+.grid .tile .meta {
+  margin-top: 5px;
+
+  font-size: 7px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  opacity: 0.82;
 }
 
 
 /* =========================================================
-   INNER PAGES
+   08. ACTIVITIES
    ========================================================= */
 
-.page-hero {
-  padding: 160px 5vw 70px;
+.activities-section {
+  padding-top: 78px;
 
-  background: #1b1d19;
-
-  color: #f2f0e9;
+  padding-bottom: 95px;
 }
 
 
+/*
+ * IMPORTANT:
+ *
+ * Activities has its own grid.
+ *
+ * It does NOT inherit the archive grid.
+ *
+ * Four equal columns on desktop.
+ */
+
+.activities-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  column-gap: 36px;
+
+  row-gap: 44px;
+
+  align-items: start;
+
+  background: transparent;
+}
+
+
+/*
+ * Individual poster.
+ */
+
+.activity-card {
+  width: 100%;
+
+  max-width: 175px;
+
+  margin: 0 auto;
+
+  min-width: 0;
+
+  background: transparent;
+
+  overflow: visible;
+}
+
+
+/*
+ * Poster itself.
+ *
+ * NO fixed height.
+ * NO object-fit: cover.
+ *
+ * Therefore the complete poster is always visible.
+ */
+
+.activity-card img {
+  width: 100%;
+
+  height: auto;
+
+  max-width: 100%;
+
+  min-height: 0;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  background: transparent;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.activity-card:hover img {
+  transform: translateY(-4px);
+}
+
+
+/*
+ * Caption below poster.
+ */
+
+.activity-card figcaption {
+  position: static;
+
+  width: 100%;
+
+  padding:
+    12px
+    0
+    0;
+
+  color: var(--ink);
+
+  background: transparent;
+
+  opacity: 1;
+
+  transform: none;
+
+  text-align: left;
+}
+
+.activity-card .title {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15px;
+
+  line-height: 1.15;
+}
+
+.activity-card .meta {
+  margin-top: 6px;
+
+  color: var(--muted);
+
+  font-size: 8px;
+
+  letter-spacing: 0.15em;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   09. PHOTOGRAPHER / ABOUT
+   ========================================================= */
+
+.about {
+  width: 100%;
+
+  max-width: none;
+
+  margin: 0;
+
+  padding-top: 82px;
+
+  padding-bottom: 82px;
+
+  padding-left:
+    max(
+      var(--page-padding),
+      calc((100vw - var(--content-width)) / 2)
+    );
+
+  padding-right:
+    max(
+      var(--page-padding),
+      calc((100vw - var(--content-width)) / 2)
+    );
+
+  background: var(--dark);
+
+  color: #f0eee7;
+}
+
+.about-grid {
+  width: 100%;
+
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+
+  max-height: 570px;
+
+  object-fit: cover;
+}
+
+.about .section-kicker {
+  color: #f0eee7;
+}
+
+.about h2 {
+  color: #f0eee7;
+}
+
+.about p {
+  max-width: 570px;
+
+  margin:
+    22px
+    0
+    0;
+
+  color: #c5c6bd;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.text-link {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding-bottom: 7px;
+
+  color: #fff;
+
+  border-bottom:
+    1px solid
+    #777;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   10. FOOTER
+   ========================================================= */
+
+.footer {
+  width: 100%;
+
+  padding:
+    52px
+    var(--page-padding);
+
+  background: #111;
+
+  color: #ddd;
+}
+
+.footer-inner {
+  width: min(
+    var(--content-width),
+    100%
+  );
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.footer h3 {
+  margin: 0 0 8px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+}
+
+.footer p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 10px;
+}
+
+.footer-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+
+  font-size: 8px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   11. INNER PAGE HERO
+   ========================================================= */
+
+.page-hero {
+  width: 100%;
+
+  padding:
+    160px
+    var(--page-padding)
+    75px;
+
+  background: var(--dark);
+
+  color: var(--paper);
+}
+
 .page-hero h1 {
-  font-family: Georgia, serif;
+  max-width: var(--content-width);
+
+  margin:
+    10px
+    auto;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      52px,
+      8vw,
+      110px
+    );
 
   font-weight: 400;
 
-  font-size: clamp(
-    52px,
-    8vw,
-    110px
-  );
-
-  margin: 10px 0;
+  line-height: 0.92;
 
   letter-spacing: -0.05em;
 }
 
-
 .page-hero p {
-  max-width: 600px;
+  width: min(
+    600px,
+    100%
+  );
 
-  line-height: 1.7;
+  margin:
+    25px
+    auto
+    0;
 
   color: #bfc1b7;
+
+  line-height: 1.7;
 }
 
 
 /* =========================================================
-   PORTFOLIO FILTERS
+   12. PORTFOLIO FILTERS
    ========================================================= */
 
 .filters {
@@ -803,25 +938,27 @@ h2 {
   margin-bottom: 35px;
 }
 
-
 .filter {
+  padding:
+    9px
+    14px;
+
   border:
     1px solid
     var(--line);
 
   background: transparent;
 
-  padding: 9px 14px;
+  color: var(--ink);
 
-  text-transform: uppercase;
+  font-size: 9px;
 
   letter-spacing: 0.12em;
 
-  font-size: 10px;
+  text-transform: uppercase;
 
   cursor: pointer;
 }
-
 
 .filter.active {
   background: var(--ink);
@@ -833,23 +970,24 @@ h2 {
 
 
 /* =========================================================
-   PORTFOLIO GRID
+   13. PORTFOLIO GRID
    ========================================================= */
 
 .portfolio-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3, minmax(0, 1fr));
 
   gap: 4px;
 
   background: var(--ink);
 }
 
-
 .portfolio-card {
   position: relative;
+
+  min-width: 0;
 
   aspect-ratio: 4 / 3;
 
@@ -860,27 +998,26 @@ h2 {
   cursor: pointer;
 }
 
-
 .portfolio-card img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
-  transition: 0.5s;
+  transition:
+    transform 0.5s ease;
 }
-
 
 .portfolio-card:hover img {
   transform: scale(1.03);
 }
 
-
 .portfolio-card .caption {
   position: absolute;
 
-  inset: auto 0 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   padding: 24px;
 
@@ -894,9 +1031,9 @@ h2 {
 
   opacity: 0;
 
-  transition: 0.3s;
+  transition:
+    opacity 0.3s ease;
 }
-
 
 .portfolio-card:hover .caption {
   opacity: 1;
@@ -904,7 +1041,7 @@ h2 {
 
 
 /* =========================================================
-   LIGHTBOX
+   14. LIGHTBOX
    ========================================================= */
 
 .lightbox {
@@ -912,10 +1049,7 @@ h2 {
 
   inset: 0;
 
-  background:
-    rgba(7, 8, 7, 0.96);
-
-  z-index: 100;
+  z-index: 1000;
 
   display: none;
 
@@ -924,22 +1058,24 @@ h2 {
   justify-content: center;
 
   padding: 5vw;
-}
 
+  background:
+    rgba(7, 8, 7, 0.96);
+}
 
 .lightbox.open {
   display: flex;
 }
 
-
 .lightbox img {
+  width: auto;
+
   max-width: 92vw;
 
   max-height: 88vh;
 
   object-fit: contain;
 }
-
 
 .close,
 .prev,
@@ -952,51 +1088,55 @@ h2 {
 
   color: #fff;
 
-  font-size: 28px;
-
   cursor: pointer;
 }
-
 
 .close {
   top: 24px;
 
   right: 30px;
-}
 
+  font-size: 28px;
+}
 
 .prev {
   left: 25px;
-}
 
+  font-size: 28px;
+}
 
 .next {
   right: 25px;
+
+  font-size: 28px;
 }
 
 
 /* =========================================================
-   CONTACT
+   15. CONTACT PAGE
    ========================================================= */
 
 .contact-grid {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
 
   gap: 70px;
 }
 
-
 .contact-grid p {
-  line-height: 1.8;
-
   color: #55584f;
+
+  line-height: 1.8;
 }
 
-
 .contact-email {
-  font-family: Georgia, serif;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size:
     clamp(
@@ -1014,7 +1154,7 @@ h2 {
 
 
 /* =========================================================
-   CONTACT PAGE — ENHANCEMENTS
+   16. CONTACT ENHANCEMENTS
    ========================================================= */
 
 .contact-main {
@@ -1023,15 +1163,13 @@ h2 {
   padding-bottom: 110px;
 }
 
-
 .affiliation {
+  max-width: 560px;
+
   font-size: 1.25rem;
 
   line-height: 1.7;
-
-  max-width: 560px;
 }
-
 
 .affiliation a {
   text-decoration: underline;
@@ -1040,7 +1178,6 @@ h2 {
 
   text-underline-offset: 5px;
 }
-
 
 .elsewhere-section {
   padding-top: 100px;
@@ -1052,34 +1189,39 @@ h2 {
     rgba(20, 20, 20, 0.15);
 }
 
-
 .elsewhere-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3, minmax(0, 1fr));
 
   gap: 70px;
 
   margin-top: 55px;
 }
 
-
 .elsewhere-group h2 {
+  margin:
+    0
+    0
+    28px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 1.1rem;
 
   font-weight: 500;
-
-  margin: 0 0 28px;
 }
-
 
 .external-link {
   display: flex;
 
-  justify-content: space-between;
-
   align-items: center;
+
+  justify-content: space-between;
 
   padding: 15px 0;
 
@@ -1095,7 +1237,6 @@ h2 {
     padding-left 0.25s ease;
 }
 
-
 .external-link span {
   font-size: 1rem;
 
@@ -1105,11 +1246,9 @@ h2 {
     transform 0.25s ease;
 }
 
-
 .external-link:hover {
   padding-left: 8px;
 }
-
 
 .external-link:hover span {
   transform:
@@ -1119,26 +1258,28 @@ h2 {
     );
 }
 
-
-/* =========================================================
-   CONTACT STATEMENT
-   ========================================================= */
-
 .contact-statement {
+  padding:
+    120px
+    var(--page-padding);
+
   background: #111;
 
   color: #f4f1e9;
-
-  padding: 120px 7vw;
 }
-
 
 .contact-statement-inner {
-  max-width: 900px;
+  width: min(
+    900px,
+    100%
+  );
+
+  margin: 0 auto;
 }
 
-
 .contact-statement p {
+  margin: 0;
+
   font-family:
     Georgia,
     "Times New Roman",
@@ -1152,238 +1293,338 @@ h2 {
     );
 
   line-height: 1.12;
-
-  margin: 0;
 }
 
 
 /* =========================================================
-   RESPONSIVE — TABLET / SMALL DESKTOP
+   17. TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
 
   :root {
-    --max: 900px;
+    --page-padding: 28px;
   }
-
 
   .section {
-    padding-left: 5vw;
-
-    padding-right: 5vw;
+    width:
+      calc(
+        100% -
+        (var(--page-padding) * 2)
+      );
   }
-
 
   .hero-copy {
-    width: auto;
-
-    margin: 0;
-
-    padding-left: 5vw;
-
-    padding-right: 5vw;
+    width:
+      calc(
+        100% -
+        (var(--page-padding) * 2)
+      );
   }
-
 
   .activities-grid {
-    grid-template-columns:
-      repeat(
-        4,
-        minmax(0, 1fr)
-      ) !important;
+    column-gap: 24px;
 
-    gap: 25px 20px !important;
-
-    padding: 0;
+    row-gap: 38px;
   }
-
 
   .activity-card {
     max-width: 155px;
   }
 
+  .about-grid {
+    gap: 50px;
+  }
+
 }
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   18. SMALL TABLET
    ========================================================= */
 
 @media (max-width: 800px) {
 
-  .nav-links {
-    gap: 16px;
+  :root {
+    --page-padding: 24px;
   }
 
 
-  .section {
-    padding-top: 60px;
-
-    padding-bottom: 60px;
-  }
-
-
-  .feature {
-    grid-template-columns: 1fr;
-  }
-
-
-  .feature figure {
-    min-height: 330px;
-  }
-
-
-  .grid {
-    grid-template-columns:
-      repeat(3, 1fr);
-  }
-
-
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-  }
-
-
-  /*
-   * Activities become two columns
-   * on tablets.
-   */
-
-  .activities-grid {
-    grid-template-columns:
-      repeat(
-        2,
-        minmax(0, 1fr)
-      ) !important;
-
-    gap: 30px 24px !important;
-  }
-
-
-  .activity-card {
-    max-width: 170px;
-  }
-
-
-  .elsewhere-grid {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-
-    margin-top: 40px;
-  }
-
-
-  .contact-statement {
-    padding: 80px 7vw;
-  }
-
-
-  .footer-inner {
-    display: block;
-  }
-
-
-  .footer-links {
-    margin-top: 25px;
-
-    flex-wrap: wrap;
-  }
-
-}
-
-
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
-
-@media (max-width: 560px) {
+  /* Navigation */
 
   .site-nav {
-    padding: 18px 20px;
+    height: 64px;
   }
 
 
   .nav-links {
-    display: none;
+    gap: 18px;
   }
 
+
+  .nav-links a {
+    font-size: 8px;
+  }
+
+
+  /* Hero */
 
   .hero {
-    min-height: 78vh;
+    min-height: 72vh;
   }
-
 
   .hero-copy {
-    padding:
-      0 20px 8vh;
+    padding-bottom: 55px;
   }
-
 
   .hero h1 {
-    font-size: 58px;
+    font-size:
+      clamp(
+        48px,
+        10vw,
+        72px
+      );
   }
 
 
-  .hero p {
-    font-size: 14px;
-  }
-
+  /* Sections */
 
   .section {
-    padding-left: 20px;
+    padding-top: 62px;
 
-    padding-right: 20px;
+    padding-bottom: 62px;
   }
-
 
   .section-head {
     display: block;
 
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
-
 
   .section-intro {
     margin-top: 18px;
   }
 
 
-  .grid {
-    grid-template-columns:
-      repeat(2, 1fr);
+  /* Selected Work */
+
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .feature figure {
+    height: 340px;
   }
 
 
-  /*
-   * Keep two activity posters across
-   * on most phones.
-   */
+  /* Archive */
+
+  .grid {
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+  }
+
+
+  /* Activities */
 
   .activities-grid {
     grid-template-columns:
       repeat(
         2,
         minmax(0, 1fr)
-      ) !important;
+      );
 
-    gap: 25px 18px !important;
+    column-gap: 30px;
+
+    row-gap: 38px;
   }
-
 
   .activity-card {
-    max-width: 150px;
+    max-width: 165px;
   }
 
+
+  /* About */
+
+  .about {
+    padding-top: 65px;
+
+    padding-bottom: 65px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  /* Portfolio */
+
+  .portfolio-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+
+  /* Contact */
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .elsewhere-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    margin-top: 40px;
+  }
+
+  .contact-statement {
+    padding:
+      80px
+      var(--page-padding);
+  }
+
+
+  /* Footer */
+
+  .footer-inner {
+    display: block;
+  }
+
+  .footer-links {
+    margin-top: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   19. MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  :root {
+    --page-padding: 20px;
+  }
+
+
+  /* Navigation */
+
+  .site-nav {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    min-height: 78vh;
+  }
+
+  .hero-copy {
+    width:
+      calc(
+        100% -
+        (var(--page-padding) * 2)
+      );
+
+    padding-bottom: 48px;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .hero p {
+    max-width: 450px;
+
+    font-size: 13px;
+  }
+
+
+  /* Sections */
+
+  .section {
+    width:
+      calc(
+        100% -
+        (var(--page-padding) * 2)
+      );
+
+    padding-top: 55px;
+
+    padding-bottom: 55px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+
+  /* Selected Work */
+
+  .feature figure {
+    height: 285px;
+  }
+
+
+  /* Archive */
+
+  .grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+
+  /* Activities */
+
+  .activities-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    column-gap: 18px;
+
+    row-gap: 32px;
+  }
+
+  .activity-card {
+    max-width: 145px;
+  }
 
   .activity-card .title {
-    font-size: 14px;
+    font-size: 13px;
   }
 
+  .activity-card .meta {
+    font-size: 7px;
+  }
+
+
+  /* About */
 
   .about {
     padding-left: 20px;
@@ -1391,28 +1632,66 @@ h2 {
     padding-right: 20px;
   }
 
+  .about-grid {
+    gap: 32px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+
+  /* Portfolio */
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    padding:
+      45px
+      20px;
+  }
+
+  .footer h3 {
+    font-size: 30px;
+  }
+
 }
 
 
 /* =========================================================
-   VERY SMALL PHONES
+   20. VERY SMALL PHONES
    ========================================================= */
 
 @media (max-width: 390px) {
 
-  /*
-   * On very narrow screens, one poster
-   * per row gives enough room to read
-   * the captions.
-   */
-
-  .activities-grid {
-    grid-template-columns: 1fr !important;
+  .hero h1 {
+    font-size: 50px;
   }
 
 
+  /*
+   * Keep two posters across.
+   * They remain uncropped because
+   * their height is always auto.
+   */
+
+  .activities-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    column-gap: 14px;
+  }
+
   .activity-card {
-    max-width: 180px;
+    max-width: 135px;
   }
 
 }
