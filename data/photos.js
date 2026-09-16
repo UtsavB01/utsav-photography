@@ -33,7 +33,7 @@ window.photos = [
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
-    featured: true
+    featured: false
   },
 
   {
@@ -105,7 +105,7 @@ window.photos = [
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
-    featured: true
+    featured: false
   },
 
   {
