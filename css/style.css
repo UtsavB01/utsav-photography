@@ -729,6 +729,7 @@ select {
 
 
 .activities-grid {
+
   width: 100%;
 
   display: grid;
@@ -737,6 +738,7 @@ select {
     repeat(3, minmax(0, 1fr));
 
   column-gap: 50px;
+
   row-gap: 75px;
 
   align-items: start;
@@ -2898,13 +2900,27 @@ select {
   }
 
 
+  /* Homepage activities: keep the same 3-column
+     layout and larger poster size in PDF/print. */
+
+  .activities-grid {
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    column-gap: 50px;
+
+    row-gap: 75px;
+  }
+
+
   .activity-card {
 
     break-inside: avoid;
 
     page-break-inside: avoid;
 
-    max-width: 150px;
+    max-width: 250px;
   }
 
 
@@ -2914,9 +2930,9 @@ select {
 
     height: auto;
 
-    max-width: 150px;
+    max-width: 250px;
 
-    max-height: none;
+    max-height: 380px;
   }
 
 
