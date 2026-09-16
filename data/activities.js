@@ -9,7 +9,7 @@
   this list.
 */
 
-const activities = [
+window.activities = [
 
   {
     id: "campus-bird-count-2026",
