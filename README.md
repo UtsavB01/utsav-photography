@@ -1,38 +1,31 @@
 # Utsav Biswas — Photography Portfolio
 
-This is a redesigned, free GitHub Pages portfolio intended to become a long-term photographic archive.
+This is a long-term free GitHub Pages photography portfolio and archive.
 
-## IMPORTANT: replace the temporary images
+## Website architecture
 
-The included JPGs are only visual placeholders so the site works immediately. Replace them with your own optimized photographs:
+The homepage is deliberately curated. It does not contain the complete photographic or activity collection.
 
-- `images/hero.jpg` — your strongest landscape/wildlife image
-- `images/about.jpg` — your portrait
-- `images/portfolio/*.jpg` — your portfolio images
+- `index.html` — curated homepage
+- `portfolio.html` — complete photography archive
+- `activities.html` — complete activities/poster archive
+- `about.html` — photographer page
+- `contact.html` — contact page
+- `css/style.css` — shared visual design
+- `js/main.js` — homepage and archive logic
+- `data/photos.js` — photography records and manual homepage selections
+- `data/activities.js` — activity/poster records and homepage selections
 
-Keep the filenames initially to avoid editing code.
+## Photography folders
 
-## Add a new photograph
+Use this structure:
 
-1. Put an optimized image in `images/portfolio/`.
-2. Open `data/photos.js`.
-3. Add a record with the file path, category, title and location.
-4. Commit to GitHub.
-
-The Portfolio page automatically creates category filters and a lightbox from this data.
-
-## GitHub Pages
-
-Upload the CONTENTS of this folder to the root of:
-
-`UtsavB01/utsav-photography`
-
-Then:
-Settings → Pages → Deploy from a branch → main → /(root).
-
-Website:
-https://utsavb01.github.io/utsav-photography/
-
-## Design approach
-
-The design takes inspiration from current patterns used by leading nature photographers: immersive image-first presentation, curated project/portfolio structure, restrained typography, and separation of photography from biography/storytelling. It does not copy any individual website's layout or assets.
+```text
+images/
+└── portfolio/
+    ├── birds/
+    ├── mammals/
+    ├── insects/
+    ├── landscapes/
+    ├── macro/
+    └── night/
