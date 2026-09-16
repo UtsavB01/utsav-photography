@@ -96,7 +96,7 @@ window.photos = [
     category: "Landscapes",
     title: "Landscapes — selected work",
     location: "India",
-    featured: true
+    featured: false
   }
 
 ];
