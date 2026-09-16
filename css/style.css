@@ -2,11 +2,6 @@
    UTSAV BISWAS — NATURE PHOTOGRAPHY
    ============================================================ */
 
-
-/* ============================================================
-   01. ROOT
-   ============================================================ */
-
 :root {
 
   --paper: #f2f0e9;
@@ -36,7 +31,7 @@
 
 
 /* ============================================================
-   02. RESET
+   RESET
    ============================================================ */
 
 *,
@@ -103,7 +98,7 @@ select {
 
 
 /* ============================================================
-   03. HEADER / NAVIGATION
+   HEADER / NAVIGATION
    ============================================================ */
 
 .site-header {
@@ -212,7 +207,7 @@ select {
 
 
 /* ============================================================
-   04. HERO
+   HERO
    ============================================================ */
 
 .hero {
@@ -369,7 +364,7 @@ select {
 
 
 /* ============================================================
-   05. GENERAL SECTIONS
+   GENERAL SECTIONS
    ============================================================ */
 
 .section {
@@ -453,7 +448,7 @@ select {
 
 
 /* ============================================================
-   06. SELECTED WORK
+   SELECTED WORK
    ============================================================ */
 
 .selected-section {
@@ -477,7 +472,8 @@ select {
 }
 
 
-.selected-grid figure {
+.selected-grid figure,
+.selected-grid a {
 
   position: relative;
 
@@ -486,18 +482,25 @@ select {
   overflow: hidden;
 
   background: #252722;
+
+  display: block;
+
+  text-decoration: none;
 }
 
 
 .selected-large {
-
   aspect-ratio: 1.35 / 1;
 }
 
 
 .selected-small {
-
   aspect-ratio: 0.82 / 1;
+}
+
+
+.selected-extra {
+  aspect-ratio: 1 / 1;
 }
 
 
@@ -514,7 +517,7 @@ select {
 }
 
 
-.selected-grid figure:hover img {
+.selected-grid a:hover img {
 
   transform: scale(1.025);
 
@@ -522,7 +525,8 @@ select {
 }
 
 
-.selected-grid figcaption {
+.selected-grid figcaption,
+.selected-grid .selected-caption {
 
   position: absolute;
 
@@ -553,7 +557,7 @@ select {
 
 
 /* ============================================================
-   07. ARCHIVE
+   ARCHIVE CATEGORY PREVIEW
    ============================================================ */
 
 .archive-section {
@@ -592,6 +596,10 @@ select {
   overflow: hidden;
 
   background: #282a25;
+
+  display: block;
+
+  text-decoration: none;
 }
 
 
@@ -616,7 +624,7 @@ select {
 }
 
 
-.archive-card figcaption {
+.archive-card-caption {
 
   position: absolute;
 
@@ -650,7 +658,7 @@ select {
 }
 
 
-.archive-card:hover figcaption {
+.archive-card:hover .archive-card-caption {
 
   opacity: 1;
 
@@ -678,8 +686,41 @@ select {
 }
 
 
+.archive-more-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 48px;
+
+  padding-bottom: 9px;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.45);
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+.archive-more-link span {
+  font-size: 15px;
+}
+
+
 /* ============================================================
-   08. ACTIVITIES
+   ACTIVITIES
    ============================================================ */
 
 .activities-section {
@@ -704,13 +745,6 @@ select {
 }
 
 
-/*
-   Posters are deliberately kept independent from
-   the photography grids.
-
-   They are NOT cropped.
-*/
-
 .activity-card {
 
   min-width: 0;
@@ -720,6 +754,10 @@ select {
   max-width: 180px;
 
   margin: 0 auto;
+
+  display: block;
+
+  text-decoration: none;
 }
 
 
@@ -767,9 +805,15 @@ select {
 }
 
 
-.activity-card figcaption {
+.activity-card figcaption,
+.activity-card-caption {
 
   padding-top: 17px;
+}
+
+
+.activity-card-caption {
+  display: block;
 }
 
 
@@ -804,7 +848,7 @@ select {
 
 
 /* ============================================================
-   09. ABOUT
+   ABOUT
    ============================================================ */
 
 .about-section {
@@ -865,7 +909,6 @@ select {
 
 
 .about-content {
-
   min-width: 0;
 }
 
@@ -933,7 +976,7 @@ select {
 
 
 /* ============================================================
-   10. MORE ABOUT ME
+   MORE ABOUT ME
    ============================================================ */
 
 .more-about-section {
@@ -973,12 +1016,7 @@ select {
 }
 
 
-/* ------------------------------------------------------------
-   More About — Heading
-   ------------------------------------------------------------ */
-
 .more-about-heading {
-
   min-width: 0;
 }
 
@@ -1014,10 +1052,6 @@ select {
 }
 
 
-/* ------------------------------------------------------------
-   More About — Link Layout
-   ------------------------------------------------------------ */
-
 .more-about-links {
 
   min-width: 0;
@@ -1034,7 +1068,6 @@ select {
 
 
 .more-about-group {
-
   min-width: 0;
 }
 
@@ -1054,10 +1087,6 @@ select {
   text-transform: uppercase;
 }
 
-
-/* ------------------------------------------------------------
-   More About — External Links
-   ------------------------------------------------------------ */
 
 .external-link {
 
@@ -1127,7 +1156,785 @@ select {
 
 
 /* ============================================================
-   11. FOOTER
+   ARCHIVE PAGES
+   ============================================================ */
+
+.archive-page {
+
+  min-height: 100vh;
+
+  background: var(--paper);
+}
+
+
+.archive-page .site-header {
+
+  position: static;
+
+  background: var(--ink);
+}
+
+
+.archive-page-header {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding:
+    155px
+    5vw
+    70px;
+}
+
+
+.archive-page-header h1 {
+
+  margin:
+    10px
+    0
+    24px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(52px, 7vw, 100px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.05em;
+}
+
+
+.archive-page-header p {
+
+  max-width: 620px;
+
+  margin: 0;
+
+  color: #555850;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+.archive-controls {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding:
+    0
+    5vw
+    34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-bottom:
+    1px solid
+    var(--line);
+}
+
+
+.filters {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+.filter {
+
+  appearance: none;
+
+  border:
+    1px solid
+    var(--line);
+
+  background: transparent;
+
+  color: var(--ink);
+
+  padding:
+    9px
+    13px;
+
+  cursor: pointer;
+
+  font-size: 9px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.filter:hover,
+.filter.active {
+
+  background: var(--ink);
+
+  border-color: var(--ink);
+
+  color: var(--white);
+}
+
+
+.archive-count {
+
+  flex: 0 0 auto;
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+.photo-viewer {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding:
+    70px
+    5vw
+    110px;
+}
+
+
+.viewer-top {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.65fr)
+    minmax(260px, 0.65fr);
+
+  gap: 60px;
+
+  align-items: start;
+
+  margin-bottom: 80px;
+}
+
+
+.featured-photo {
+
+  min-width: 0;
+
+  background: #20221e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 420px;
+}
+
+
+.featured-photo img {
+
+  width: 100%;
+
+  max-height: 78vh;
+
+  object-fit: contain;
+}
+
+
+.photo-information {
+
+  min-width: 0;
+
+  padding-top: 12px;
+}
+
+
+.photo-category {
+
+  margin:
+    0
+    0
+    14px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+
+.photo-information h2 {
+
+  margin:
+    0
+    0
+    22px;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(34px, 4vw, 58px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.04em;
+}
+
+
+.photo-location {
+
+  margin:
+    0
+    0
+    30px;
+
+  color: #5c5f57;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+.photo-navigation {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+
+.photo-navigation a {
+
+  appearance: none;
+
+  border: 0;
+
+  background: transparent;
+
+  color: var(--ink);
+
+  padding:
+    0
+    0
+    8px;
+
+  border-bottom:
+    1px solid
+    rgba(20,20,20,.4);
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  font-size: 9px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+.photo-navigation .disabled {
+
+  opacity: 0.35;
+
+  pointer-events: none;
+}
+
+
+.photo-grid-heading {
+
+  display: flex;
+
+  align-items: baseline;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+
+  padding-bottom: 17px;
+
+  border-bottom:
+    1px solid
+    var(--line);
+}
+
+
+.photo-grid-heading h3 {
+
+  margin: 0;
+
+  font-family: var(--serif);
+
+  font-size: 34px;
+
+  font-weight: 400;
+
+  letter-spacing: -0.03em;
+}
+
+
+.photo-grid-heading span {
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+.photo-grid {
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 4px;
+
+  background: var(--ink);
+}
+
+
+.photo-card {
+
+  position: relative;
+
+  min-width: 0;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background: #282a25;
+
+  display: block;
+
+  text-decoration: none;
+}
+
+
+.photo-card img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.65s ease,
+    filter 0.65s ease;
+}
+
+
+.photo-card:hover img {
+
+  transform: scale(1.035);
+
+  filter: brightness(0.8);
+}
+
+
+.photo-card .photo-card-caption {
+
+  position: absolute;
+
+  inset: auto 0 0 0;
+
+  padding: 20px;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(0,0,0,.78)
+    );
+
+  opacity: 0;
+
+  transform: translateY(6px);
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+
+.photo-card:hover .photo-card-caption {
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+.photo-card-caption strong {
+
+  font-family: var(--serif);
+
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+.photo-card-caption small {
+
+  color:
+    rgba(255,255,255,.72);
+
+  font-size: 8px;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+}
+
+
+.pagination {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 45px;
+}
+
+
+.pagination a {
+
+  min-width: 34px;
+
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    var(--line);
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  letter-spacing: .08em;
+}
+
+
+.pagination a.active,
+.pagination a:hover {
+
+  background: var(--ink);
+
+  border-color: var(--ink);
+
+  color: var(--white);
+}
+
+
+.pagination .ellipsis {
+
+  padding:
+    0
+    5px;
+
+  color: var(--muted);
+}
+
+
+/* ============================================================
+   ACTIVITIES ARCHIVE
+   ============================================================ */
+
+.activities-page-grid {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  padding:
+    0
+    5vw
+    120px;
+}
+
+
+.activity-year {
+
+  margin:
+    0
+    0
+    70px;
+}
+
+
+.activity-year-heading {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 20px;
+
+  padding-bottom: 18px;
+
+  margin-bottom: 32px;
+
+  border-bottom:
+    1px solid
+    var(--line);
+}
+
+
+.activity-year-heading h2 {
+
+  margin: 0;
+
+  font-family: var(--serif);
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  letter-spacing: -.04em;
+}
+
+
+.activity-year-heading span {
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: .14em;
+
+  text-transform: uppercase;
+}
+
+
+.activities-archive-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  column-gap: 28px;
+
+  row-gap: 60px;
+
+  align-items: start;
+}
+
+
+/* ============================================================
+   SUPPORT FOR ABOUT / CONTACT PAGES
+   ============================================================ */
+
+.contact-main,
+.elsewhere-section {
+  background: var(--paper);
+}
+
+
+.contact-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 60px;
+}
+
+
+.contact-block p {
+
+  color: #555850;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+.contact-block a {
+  color: inherit;
+}
+
+
+.contact-email {
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(24px, 3vw, 38px);
+
+  text-decoration: none;
+}
+
+
+.affiliation a {
+
+  text-decoration: none;
+
+  border-bottom:
+    1px solid
+    rgba(20,20,20,.2);
+}
+
+
+.elsewhere-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0,1fr));
+
+  gap: 55px;
+
+  margin-top: 35px;
+}
+
+
+.elsewhere-group h2 {
+
+  margin:
+    0
+    0
+    22px;
+
+  font-family: var(--serif);
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  letter-spacing: -.03em;
+}
+
+
+.contact-statement {
+
+  background: var(--ink);
+
+  color: var(--white);
+
+  padding:
+    90px
+    5vw;
+}
+
+
+.contact-statement-inner {
+
+  width: 100%;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+}
+
+
+.contact-statement p {
+
+  max-width: 850px;
+
+  margin: 0;
+
+  font-family: var(--serif);
+
+  font-size:
+    clamp(30px, 4vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -.035em;
+}
+
+
+.archive-empty {
+
+  grid-column: 1 / -1;
+
+  padding: 45px;
+
+  color: var(--muted);
+
+  background: var(--paper-light);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   FOOTER
    ============================================================ */
 
 .site-footer {
@@ -1171,7 +1978,10 @@ select {
 
 .footer-kicker {
 
-  margin: 0 0 18px;
+  margin:
+    0
+    0
+    18px;
 
   color: #777b72;
 
@@ -1276,7 +2086,7 @@ select {
 
 
 /* ============================================================
-   12. LARGE TABLET
+   LARGE TABLET
    ============================================================ */
 
 @media (max-width: 950px) {
@@ -1358,11 +2168,25 @@ select {
     column-gap: 35px;
   }
 
+
+  .photo-grid {
+
+    grid-template-columns:
+      repeat(3, minmax(0,1fr));
+  }
+
+
+  .activities-archive-grid {
+
+    grid-template-columns:
+      repeat(4, minmax(0,1fr));
+  }
+
 }
 
 
 /* ============================================================
-   13. TABLET
+   TABLET
    ============================================================ */
 
 @media (max-width: 760px) {
@@ -1445,7 +2269,8 @@ select {
 
 
   .selected-large,
-  .selected-small {
+  .selected-small,
+  .selected-extra {
 
     aspect-ratio: 1.25 / 1;
   }
@@ -1557,11 +2382,90 @@ select {
     margin-top: 60px;
   }
 
+
+  .archive-page-header {
+
+    padding:
+      125px
+      6vw
+      55px;
+  }
+
+
+  .archive-controls {
+
+    padding-left: 6vw;
+
+    padding-right: 6vw;
+  }
+
+
+  .photo-viewer {
+
+    padding-left: 6vw;
+
+    padding-right: 6vw;
+  }
+
+
+  .viewer-top {
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .featured-photo {
+
+    min-height: 280px;
+  }
+
+
+  .photo-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0,1fr));
+  }
+
+
+  .activities-page-grid {
+
+    padding-left: 6vw;
+
+    padding-right: 6vw;
+  }
+
+
+  .activities-archive-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0,1fr));
+
+    column-gap: 30px;
+  }
+
+
+  .contact-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .elsewhere-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
 }
 
 
 /* ============================================================
-   14. MOBILE
+   MOBILE
    ============================================================ */
 
 @media (max-width: 520px) {
@@ -1669,7 +2573,7 @@ select {
   }
 
 
-  .archive-card figcaption {
+  .archive-card-caption {
 
     opacity: 1;
 
@@ -1771,11 +2675,102 @@ select {
     gap: 17px;
   }
 
+
+  .archive-page-header {
+
+    padding:
+      110px
+      6vw
+      45px;
+  }
+
+
+  .archive-page-header h1 {
+
+    font-size:
+      clamp(48px, 14vw, 72px);
+  }
+
+
+  .archive-controls {
+
+    display: block;
+
+    padding:
+      0
+      6vw
+      25px;
+  }
+
+
+  .archive-count {
+
+    display: block;
+
+    margin-top: 18px;
+  }
+
+
+  .photo-viewer {
+
+    padding:
+      45px
+      6vw
+      80px;
+  }
+
+
+  .featured-photo {
+
+    min-height: 220px;
+  }
+
+
+  .photo-information h2 {
+
+    font-size: 40px;
+  }
+
+
+  .photo-grid-heading h3 {
+
+    font-size: 28px;
+  }
+
+
+  .photo-grid-heading span {
+
+    font-size: 8px;
+  }
+
+
+  .activities-page-grid {
+
+    padding:
+      0
+      6vw
+      80px;
+  }
+
+
+  .activity-year-heading h2 {
+
+    font-size: 34px;
+  }
+
+
+  .contact-statement {
+
+    padding:
+      70px
+      6vw;
+  }
+
 }
 
 
 /* ============================================================
-   15. VERY SMALL PHONES
+   VERY SMALL PHONES
    ============================================================ */
 
 @media (max-width: 360px) {
@@ -1814,7 +2809,7 @@ select {
 
 
 /* ============================================================
-   16. REDUCED MOTION
+   REDUCED MOTION
    ============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1841,7 +2836,7 @@ select {
 
 
 /* ============================================================
-   17. PRINT / PDF SAFETY
+   PRINT / PDF SAFETY
    ============================================================ */
 
 @media print {
@@ -1891,7 +2886,9 @@ select {
 
   .selected-grid,
   .archive-grid,
-  .activities-grid {
+  .activities-grid,
+  .photo-grid,
+  .activities-archive-grid {
 
     break-inside: avoid;
 
@@ -1921,7 +2918,8 @@ select {
   }
 
 
-  .archive-card figcaption {
+  .archive-card-caption,
+  .photo-card .photo-card-caption {
 
     opacity: 1;
 
