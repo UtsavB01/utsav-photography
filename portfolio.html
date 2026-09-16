@@ -1,9 +1,173 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfolio — Utsav Biswas</title><link rel="stylesheet" href="css/style.css"></head><body>
-<nav class="site-nav"><a class="brand" href="index.html">Utsav Biswas</a><div class="nav-links"><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
-<header class="page-hero"><div class="section-kicker">The archive</div><h1>Portfolio</h1><p>A growing collection of photographs from the field. Browse by subject; the archive will become more detailed as it grows.</p></header>
-<main class="section"><div class="filters" id="filters"></div><div class="portfolio-grid" id="gallery"></div></main>
-<div class="lightbox" id="lightbox"><button class="close" id="close">×</button><button class="prev" id="prev">‹</button><img id="lightboxImg" alt=""><button class="next" id="next">›</button></div>
-<footer class="footer"><div class="footer-inner"><div><h3>Utsav Biswas</h3><p>Nature photography · Field notes · Natural history</p></div></div></footer>
-<script src="data/photos.js"></script><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Utsav Biswas — nature photography archive. Browse birds, mammals, insects, landscapes, macro and nocturnal observations."
+  >
+
+  <title>Portfolio — Utsav Biswas</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="archive-page">
+
+  <header class="site-header archive-site-header">
+
+    <nav class="site-nav">
+
+      <a href="index.html" class="brand">
+        Utsav Biswas
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#archive">Archive</a>
+        <a href="activities.html">Activities</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#more-about">More about me</a>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <header class="archive-page-header">
+
+    <p class="section-kicker">
+      The archive
+    </p>
+
+    <h1 id="archive-title">
+      Portfolio
+    </h1>
+
+    <p id="archive-description">
+      A growing collection of photographs from the field. Browse by subject; the archive will become more detailed as it grows.
+    </p>
+
+  </header>
+
+
+  <div class="archive-controls">
+
+    <div class="filters" id="filters"></div>
+
+    <div class="archive-count" id="archive-count"></div>
+
+  </div>
+
+
+  <main class="photo-viewer">
+
+    <section class="viewer-top" id="viewer-top">
+
+      <div class="featured-photo">
+        <img id="featured-photo" src="" alt="">
+      </div>
+
+      <div class="photo-information">
+
+        <p class="photo-category" id="photo-category"></p>
+
+        <h2 id="photo-title"></h2>
+
+        <p class="photo-location" id="photo-location"></p>
+
+        <div class="photo-navigation">
+
+          <a id="previous-photo" href="#">
+            ← Previous
+          </a>
+
+          <a id="next-photo" href="#">
+            Next →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="photo-grid-heading">
+
+        <h3 id="grid-title">
+          Photographs
+        </h3>
+
+        <span id="page-label"></span>
+
+      </div>
+
+      <div class="photo-grid" id="gallery"></div>
+
+      <nav
+        class="pagination"
+        id="pagination"
+        aria-label="Photography archive pages"
+      ></nav>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-main">
+
+        <p class="footer-kicker">
+          Utsav Biswas
+        </p>
+
+        <h2>
+          Nature Photography |<br>
+          Looking deep into nature,<br>
+          one frame at a time.
+        </h2>
+
+      </div>
+
+      <div class="footer-side">
+
+        <p>
+          Bengaluru, India
+        </p>
+
+        <p>
+          © 2026 Utsav Biswas
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#archive">Archive</a>
+      <a href="activities.html">Activities</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#more-about">More about me</a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="data/photos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
