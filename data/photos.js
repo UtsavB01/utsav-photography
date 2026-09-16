@@ -55,6 +55,15 @@ window.photos = [
   },
 
   {
+  id: "insects-02",
+  file: "images/portfolio/insects/insects-02.jpg",
+  category: "Insects",
+  title: "Insects — selected work",
+  location: "India",
+  featured: false
+  },
+
+  {
     id: "landscapes-01",
     file: "images/portfolio/landscapes/landscapes-01.jpg",
     category: "Landscapes",
@@ -72,6 +81,15 @@ window.photos = [
     featured: true
   },
 
+  {
+  id: "macro-02",
+  file: "images/portfolio/insects/insects-02.jpg",
+  category: "Insects",
+  title: "Insects — selected work",
+  location: "India",
+  featured: false
+  },
+  
   {
     id: "night-01",
     file: "images/portfolio/night/night-01.jpg",
