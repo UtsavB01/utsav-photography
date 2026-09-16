@@ -18,7 +18,7 @@ const activities = [
     date: "February 2026",
     year: "2026",
     alt: "IISc Campus Bird Count poster — February 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -28,7 +28,7 @@ const activities = [
     date: "April 2026",
     year: "2026",
     alt: "Tree Walk poster — April 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -88,7 +88,7 @@ const activities = [
     date: "September 2026",
     year: "2026",
     alt: "Insect Walk poster — September 2026",
-    featured: false
+    featured: true
   }
 
 ];
