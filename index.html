@@ -112,7 +112,7 @@
 
           <h2>
             Moments.<br>
-            </h2>
+          </h2>
 
         </div>
 
@@ -124,42 +124,16 @@
       </div>
 
 
-      <div class="selected-grid">
+      <!--
+        These photographs are selected MANUALLY in
+        data/photos.js by setting featured: true.
 
-        <figure class="selected-large">
+        The homepage displays up to 8 featured photographs.
+        Featured photographs remain in their normal category
+        archive as well.
+      -->
 
-          <img
-            src="images/portfolio/landscapes-01.jpg"
-            alt="Landscape photograph"
-            loading="lazy"
-          >
-
-          <figcaption>
-            <span class="image-label">
-              Landscape
-            </span>
-          </figcaption>
-
-        </figure>
-
-
-        <figure class="selected-small">
-
-          <img
-            src="images/portfolio/birds-01.jpg"
-            alt="Bird photograph"
-            loading="lazy"
-          >
-
-          <figcaption>
-            <span class="image-label">
-              Birds
-            </span>
-          </figcaption>
-
-        </figure>
-
-      </div>
+      <div class="selected-grid" id="selected-work-grid"></div>
 
     </section>
 
@@ -201,7 +175,10 @@
 
         <!-- Birds -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Birds"
+        >
 
           <img
             src="images/portfolio/birds-02.jpg"
@@ -209,7 +186,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               01
@@ -219,14 +196,17 @@
               Birds
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
         <!-- Mammals -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Mammals"
+        >
 
           <img
             src="images/portfolio/mammals-01.jpg"
@@ -234,7 +214,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               02
@@ -244,14 +224,17 @@
               Mammals
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
         <!-- Insects -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Insects"
+        >
 
           <img
             src="images/portfolio/insects-01.jpg"
@@ -259,7 +242,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               03
@@ -269,14 +252,17 @@
               Insects
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
         <!-- Landscapes -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Landscapes"
+        >
 
           <img
             src="images/portfolio/landscapes-02.jpg"
@@ -284,7 +270,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               04
@@ -294,14 +280,17 @@
               Landscapes
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
         <!-- Macro -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Macro"
+        >
 
           <img
             src="images/portfolio/macro-01.jpg"
@@ -309,7 +298,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               05
@@ -319,14 +308,17 @@
               Macro
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
         <!-- Night -->
 
-        <figure class="archive-card">
+        <a
+          class="archive-card"
+          href="portfolio.html?category=Night"
+        >
 
           <img
             src="images/portfolio/night-01.jpg"
@@ -334,7 +326,7 @@
             loading="lazy"
           >
 
-          <figcaption>
+          <span class="archive-card-caption">
 
             <span class="archive-number">
               06
@@ -344,12 +336,20 @@
               After dark
             </span>
 
-          </figcaption>
+          </span>
 
-        </figure>
+        </a>
 
 
       </div>
+
+      <a
+        href="portfolio.html"
+        class="archive-more-link"
+      >
+        View full photography archive
+        <span>→</span>
+      </a>
 
     </section>
 
@@ -386,258 +386,21 @@
       </div>
 
 
-      <div class="activities-grid">
-
-
-        <!-- ===================================================
-             01 — CAMPUS BIRD COUNT
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Campus Bird Count IISc 14th Feb 2026.jpeg"
-              alt="IISc Campus Bird Count poster — February 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              IISc Campus Bird Count
-            </span>
-
-            <span class="activity-date">
-              February 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             02 — TREE WALK
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Tree walk 11 April 2026.jpeg"
-              alt="Tree Walk poster — April 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Tree Walk
-            </span>
-
-            <span class="activity-date">
-              April 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             03 — LORIS WALK
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Nature Club poster Loris walk_2nd July 2026.jpg"
-              alt="Loris Walk poster — July 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Loris Walk
-            </span>
-
-            <span class="activity-date">
-              July 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             04 — INSECT WALK
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Nature Club poster Insect walk final 12 July 2026.png"
-              alt="Insect Walk poster — July 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Insect Walk
-            </span>
-
-            <span class="activity-date">
-              July 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             05 — BIRD WALK AUGUST
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Nature Club poster Bird walk 8 Aug 2026_Final.png"
-              alt="Campus Bird Walk poster — August 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Campus Bird Walk
-            </span>
-
-            <span class="activity-date">
-              August 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             06 — BUTTERFLY WALK
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/Butterfly Walk_6th Sept 2026_Final.png"
-              alt="Butterfly Walk poster — September 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Butterfly Walk
-            </span>
-
-            <span class="activity-date">
-              September 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             07 — BIRD WALK SEPTEMBER
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/IISc_Bird_walk_12thSept2026_Final.png"
-              alt="Campus Bird Walk poster — September 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Campus Bird Walk
-            </span>
-
-            <span class="activity-date">
-              September 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-        <!-- ===================================================
-             08 — INSECT WALK SEPTEMBER
-             =================================================== -->
-
-        <figure class="activity-card">
-
-          <div class="activity-image">
-
-            <img
-              src="images/activities/IISc_Insect_Walk_12thSept2026_Final.png"
-              alt="Insect Walk poster — September 2026"
-              loading="lazy"
-            >
-
-          </div>
-
-          <figcaption>
-
-            <span class="activity-title">
-              Insect Walk
-            </span>
-
-            <span class="activity-date">
-              September 2026
-            </span>
-
-          </figcaption>
-
-        </figure>
-
-
-      </div>
+      <!--
+        The homepage shows the activities marked featured: true
+        in data/activities.js, up to a maximum of 6.
+        The complete collection lives in activities.html.
+      -->
+
+      <div class="activities-grid" id="activities-grid"></div>
+
+      <a
+        href="activities.html"
+        class="archive-more-link"
+      >
+        View all activities
+        <span>→</span>
+      </a>
 
     </section>
 
@@ -1045,6 +808,10 @@
 
   </footer>
 
+
+  <script src="data/photos.js"></script>
+  <script src="data/activities.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
