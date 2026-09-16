@@ -55,12 +55,12 @@ window.photos = [
   },
 
   {
-  id: "insects-02",
-  file: "images/portfolio/insects/insects-02.jpg",
-  category: "Insects",
-  title: "Insects — selected work",
-  location: "India",
-  featured: false
+    id: "insects-02",
+    file: "images/portfolio/insects/insects-02.jpg",
+    category: "Insects",
+    title: "Insects — selected work",
+    location: "India",
+    featured: true
   },
 
   {
