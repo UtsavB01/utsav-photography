@@ -16,7 +16,7 @@
   paginates them at 50 photographs per page.
 */
 
-const photos = [
+window.photos = [
 
   {
     id: "birds-01",
