@@ -82,12 +82,12 @@ window.photos = [
   },
 
   {
-  id: "macro-02",
-  file: "images/portfolio/macro/macro-02.jpg",
-  category: "Macro",
-  title: "Macro — selected work",
-  location: "India",
-  featured: false
+    id: "macro-02",
+    file: "images/portfolio/macro/macro-02.jpg",
+    category: "Macro",
+    title: "Macro — selected work",
+    location: "India",
+    featured: true
   },
   
   {
