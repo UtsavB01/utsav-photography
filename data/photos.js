@@ -33,7 +33,7 @@ const photos = [
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -42,7 +42,7 @@ const photos = [
     category: "Mammals",
     title: "Mammals — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -51,7 +51,7 @@ const photos = [
     category: "Insects",
     title: "Insects — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -69,7 +69,7 @@ const photos = [
     category: "Macro",
     title: "Macro — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -78,7 +78,7 @@ const photos = [
     category: "Night",
     title: "Night — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -87,7 +87,7 @@ const photos = [
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
-    featured: false
+    featured: true
   },
 
   {
@@ -96,7 +96,7 @@ const photos = [
     category: "Landscapes",
     title: "Landscapes — selected work",
     location: "India",
-    featured: false
+    featured: true
   }
 
 ];
