@@ -83,9 +83,9 @@ window.photos = [
 
   {
   id: "macro-02",
-  file: "images/portfolio/insects/insects-02.jpg",
-  category: "Insects",
-  title: "Insects — selected work",
+  file: "images/portfolio/macro/macro-02.jpg",
+  category: "Macro",
+  title: "Macro — selected work",
   location: "India",
   featured: false
   },
