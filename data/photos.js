@@ -46,19 +46,19 @@ window.photos = [
   },
 
   {
-    id: "insects-01",
-    file: "images/portfolio/insects/insects-01.jpg",
-    category: "Insects",
-    title: "Insects — selected work",
+    id: "butterflies-01",
+    file: "images/portfolio/butterflies/butterflies-01.jpg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
     location: "India",
     featured: true
   },
 
   {
-    id: "insects-02",
-    file: "images/portfolio/insects/insects-02.jpg",
-    category: "Insects",
-    title: "Insects — selected work",
+    id: "butterflies-02",
+    file: "images/portfolio/butterflies/butterflies-02.jpg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
     location: "India",
     featured: false
   },
