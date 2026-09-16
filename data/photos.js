@@ -60,7 +60,7 @@ window.photos = [
     category: "Insects",
     title: "Insects — selected work",
     location: "India",
-    featured: true
+    featured: false
   },
 
   {
@@ -87,7 +87,7 @@ window.photos = [
     category: "Macro",
     title: "Macro — selected work",
     location: "India",
-    featured: true
+    featured: false
   },
   
   {
