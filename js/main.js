@@ -17,7 +17,7 @@
   "use strict";
 
   const PAGE_SIZE = 50;
-  const MAX_FEATURED_PHOTOS = 8;
+  const MAX_FEATURED_PHOTOS = 6;
   const MAX_FEATURED_ACTIVITIES = 6;
 
   const photoData = Array.isArray(window.photos) ? window.photos : [];
