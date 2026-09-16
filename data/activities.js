@@ -13,7 +13,7 @@ window.activities = [
 
   {
     id: "campus-bird-count-2026",
-    file: "images/activities/Campus Bird Count IISc 14th Feb 2026.jpeg",
+    file: "images/activities/2026/Campus Bird Count IISc 14th Feb 2026.jpeg",
     title: "IISc Campus Bird Count",
     date: "February 2026",
     year: "2026",
@@ -23,7 +23,7 @@ window.activities = [
 
   {
     id: "tree-walk-2026",
-    file: "images/activities/Tree walk 11 April 2026.jpeg",
+    file: "images/activities/2026/Tree walk 11 April 2026.jpeg",
     title: "Tree Walk",
     date: "April 2026",
     year: "2026",
@@ -33,7 +33,7 @@ window.activities = [
 
   {
     id: "loris-walk-2026",
-    file: "images/activities/Nature Club poster Loris walk_2nd July 2026.jpg",
+    file: "images/activities/2026/Nature Club poster Loris walk_2nd July 2026.jpg",
     title: "Loris Walk",
     date: "July 2026",
     year: "2026",
@@ -43,7 +43,7 @@ window.activities = [
 
   {
     id: "insect-walk-july-2026",
-    file: "images/activities/Nature Club poster Insect walk final 12 July 2026.png",
+    file: "images/activities/2026/Nature Club poster Insect walk final 12 July 2026.png",
     title: "Insect Walk",
     date: "July 2026",
     year: "2026",
@@ -53,7 +53,7 @@ window.activities = [
 
   {
     id: "bird-walk-august-2026",
-    file: "images/activities/Nature Club poster Bird walk 8 Aug 2026_Final.png",
+    file: "images/activities/2026/Nature Club poster Bird walk 8 Aug 2026_Final.png",
     title: "Campus Bird Walk",
     date: "August 2026",
     year: "2026",
@@ -63,7 +63,7 @@ window.activities = [
 
   {
     id: "butterfly-walk-september-2026",
-    file: "images/activities/Butterfly Walk_6th Sept 2026_Final.png",
+    file: "images/activities/2026/Butterfly Walk_6th Sept 2026_Final.png",
     title: "Butterfly Walk",
     date: "September 2026",
     year: "2026",
