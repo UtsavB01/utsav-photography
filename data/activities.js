@@ -78,7 +78,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Campus Bird Walk poster — September 2026",
-    featured: true
+    featured: false
   },
 
   {
@@ -88,7 +88,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Insect Walk poster — September 2026",
-    featured: true
+    featured: false
   }
 
 ];
