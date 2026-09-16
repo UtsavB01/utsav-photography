@@ -20,7 +20,7 @@ window.photos = [
 
   {
     id: "birds-01",
-    file: "images/portfolio/birds-01.jpg",
+    file: "images/portfolio/birds/birds-01.jpg",
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
@@ -29,7 +29,7 @@ window.photos = [
 
   {
     id: "birds-02",
-    file: "images/portfolio/birds-02.jpg",
+    file: "images/portfolio/birds/birds-02.jpg",
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
@@ -38,7 +38,7 @@ window.photos = [
 
   {
     id: "mammals-01",
-    file: "images/portfolio/mammals-01.jpg",
+    file: "images/portfolio/mammals/mammals-01.jpg",
     category: "Mammals",
     title: "Mammals — selected work",
     location: "India",
@@ -47,7 +47,7 @@ window.photos = [
 
   {
     id: "insects-01",
-    file: "images/portfolio/insects-01.jpg",
+    file: "images/portfolio/insects/insects-01.jpg",
     category: "Insects",
     title: "Insects — selected work",
     location: "India",
@@ -56,7 +56,7 @@ window.photos = [
 
   {
     id: "landscapes-01",
-    file: "images/portfolio/landscapes-01.jpg",
+    file: "images/portfolio/landscapes/landscapes-01.jpg",
     category: "Landscapes",
     title: "Landscapes — selected work",
     location: "India",
@@ -65,7 +65,7 @@ window.photos = [
 
   {
     id: "macro-01",
-    file: "images/portfolio/macro-01.jpg",
+    file: "images/portfolio/macro/macro-01.jpg",
     category: "Macro",
     title: "Macro — selected work",
     location: "India",
@@ -74,7 +74,7 @@ window.photos = [
 
   {
     id: "night-01",
-    file: "images/portfolio/night-01.jpg",
+    file: "images/portfolio/night/night-01.jpg",
     category: "Night",
     title: "Night — selected work",
     location: "India",
@@ -83,7 +83,7 @@ window.photos = [
 
   {
     id: "birds-03",
-    file: "images/portfolio/birds-03.jpg",
+    file: "images/portfolio/birds/birds-03.jpg",
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
@@ -92,7 +92,7 @@ window.photos = [
 
   {
     id: "landscapes-02",
-    file: "images/portfolio/landscapes-02.jpg",
+    file: "images/portfolio/landscapes/landscapes-02.jpg",
     category: "Landscapes",
     title: "Landscapes — selected work",
     location: "India",
