@@ -73,6 +73,151 @@ window.photos = [
   },
 
   {
+    id: "butterflies-04",
+    file: "images/portfolio/butterflies/butterflies-04.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-05",
+    file: "images/portfolio/butterflies/butterflies-05.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-06",
+    file: "images/portfolio/butterflies/butterflies-06.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-07",
+    file: "images/portfolio/butterflies/butterflies-07.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-08",
+    file: "images/portfolio/butterflies/butterflies-08.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-09",
+    file: "images/portfolio/butterflies/butterflies-09.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-10",
+    file: "images/portfolio/butterflies/butterflies-10.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-11",
+    file: "images/portfolio/butterflies/butterflies-11.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-12",
+    file: "images/portfolio/butterflies/butterflies-12.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-13",
+    file: "images/portfolio/butterflies/butterflies-13.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-14",
+    file: "images/portfolio/butterflies/butterflies-14.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-15",
+    file: "images/portfolio/butterflies/butterflies-15.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-16",
+    file: "images/portfolio/butterflies/butterflies-16.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-17",
+    file: "images/portfolio/butterflies/butterflies-17.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-18",
+    file: "images/portfolio/butterflies/butterflies-18.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-19",
+    file: "images/portfolio/butterflies/butterflies-19.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-20",
+    file: "images/portfolio/butterflies/butterflies-20.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  {
+    id: "butterflies-21",
+    file: "images/portfolio/butterflies/butterflies-21.jpeg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
+  
+  {
     id: "landscapes-01",
     file: "images/portfolio/landscapes/landscapes-01.jpg",
     category: "Landscapes",
