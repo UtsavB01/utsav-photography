@@ -265,7 +265,7 @@ window.photos = [
 
   {
     id: "birds-04",
-    file: "images/portfolio/birds/birds-04.jpg",
+    file: "images/portfolio/birds/birds-04.jpeg",
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
@@ -274,7 +274,7 @@ window.photos = [
 
   {
     id: "birds-05",
-    file: "images/portfolio/birds/birds-05.jpg",
+    file: "images/portfolio/birds/birds-05.jpeg",
     category: "Birds",
     title: "Birds — selected work",
     location: "India",
