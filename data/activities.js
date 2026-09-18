@@ -73,7 +73,7 @@ window.activities = [
 
   {
     id: "bird-walk-september-2026",
-    file: "images/activities/IISc_Bird_walk_12thSept2026_Final.png",
+    file: "images/activities/2026/IISc_Bird_walk_12thSept2026_Final.png",
     title: "Campus Bird Walk",
     date: "September 2026",
     year: "2026",
@@ -83,11 +83,21 @@ window.activities = [
 
   {
     id: "insect-walk-september-2026",
-    file: "images/activities/IISc_Insect_Walk_12thSept2026_Final.png",
+    file: "images/activities/2026/IISc_Insect_Walk_12thSept2026_Final.png",
     title: "Insect Walk",
     date: "September 2026",
     year: "2026",
     alt: "Insect Walk poster — September 2026",
+    featured: false
+  }
+
+  {
+    id: "bird-walk-september-2026",
+    file: "images/activities/2026/IISc_Bird_walk_19thSept2026_Final.png",
+    title: "Bird Walk for Beginners",
+    date: "September 2026",
+    year: "2026",
+    alt: "Bird Walk poster — September 2026",
     featured: false
   }
 
