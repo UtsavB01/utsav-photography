@@ -247,7 +247,7 @@ window.photos = [
 
   {
     id: "night-02",
-    file: "images/portfolio/night/night-02.jpg",
+    file: "images/portfolio/night/night-02.jpeg",
     category: "Night",
     title: "Night — selected work",
     location: "India",
