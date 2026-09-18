@@ -89,7 +89,7 @@ window.activities = [
     year: "2026",
     alt: "Insect Walk poster — September 2026",
     featured: false
-  }
+  },
 
   {
     id: "bird-walk-september-2026",
