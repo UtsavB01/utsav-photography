@@ -65,7 +65,7 @@ window.photos = [
   
   {
     id: "butterflies-03",
-    file: "images/portfolio/butterflies/butterflies-03.jpg",
+    file: "images/portfolio/butterflies/butterflies-03.jpeg",
     category: "Butterflies",
     title: "Butterflies — selected work",
     location: "India",
