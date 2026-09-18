@@ -208,14 +208,6 @@ window.photos = [
     location: "India",
     featured: false
   },
-  {
-    id: "butterflies-21",
-    file: "images/portfolio/butterflies/butterflies-21.jpeg",
-    category: "Butterflies",
-    title: "Butterflies — selected work",
-    location: "India",
-    featured: false
-  },
   
   {
     id: "landscapes-01",
@@ -254,6 +246,15 @@ window.photos = [
   },
 
   {
+    id: "night-02",
+    file: "images/portfolio/night/night-02.jpg",
+    category: "Night",
+    title: "Night — selected work",
+    location: "India",
+    featured: false
+  },
+  
+  {
     id: "birds-03",
     file: "images/portfolio/birds/birds-03.jpg",
     category: "Birds",
@@ -262,6 +263,24 @@ window.photos = [
     featured: false
   },
 
+  {
+    id: "birds-04",
+    file: "images/portfolio/birds/birds-04.jpg",
+    category: "Birds",
+    title: "Birds — selected work",
+    location: "India",
+    featured: false
+  },
+
+  {
+    id: "birds-05",
+    file: "images/portfolio/birds/birds-05.jpg",
+    category: "Birds",
+    title: "Birds — selected work",
+    location: "India",
+    featured: false
+  },
+  
   {
     id: "landscapes-02",
     file: "images/portfolio/landscapes/landscapes-02.jpg",
