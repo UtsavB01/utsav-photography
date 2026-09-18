@@ -94,10 +94,10 @@ window.activities = [
   {
     id: "bird-walk-september-2026",
     file: "images/activities/2026/IISc_Bird_walk_19thSept2026_Final.png",
-    title: "Bird Walk for Beginners",
+    title: "Campus Bird Walk",
     date: "September 2026",
     year: "2026",
-    alt: "Bird Walk poster — September 2026",
+    alt: "Campus Bird Walk poster — September 2026",
     featured: false
   }
 
