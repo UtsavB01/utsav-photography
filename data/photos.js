@@ -37,6 +37,33 @@ window.photos = [
   },
 
   {
+    id: "birds-03",
+    file: "images/portfolio/birds/birds-03.jpg",
+    category: "Birds",
+    title: "Birds — selected work",
+    location: "India",
+    featured: false
+  },
+
+  {
+    id: "birds-04",
+    file: "images/portfolio/birds/birds-04.jpeg",
+    category: "Birds",
+    title: "Birds — selected work",
+    location: "India",
+    featured: false
+  },
+
+  {
+    id: "birds-05",
+    file: "images/portfolio/birds/birds-05.jpeg",
+    category: "Birds",
+    title: "Birds — selected work",
+    location: "India",
+    featured: false
+  },
+  
+  {
     id: "mammals-01",
     file: "images/portfolio/mammals/mammals-01.jpg",
     category: "Mammals",
@@ -254,32 +281,7 @@ window.photos = [
     featured: false
   },
   
-  {
-    id: "birds-03",
-    file: "images/portfolio/birds/birds-03.jpg",
-    category: "Birds",
-    title: "Birds — selected work",
-    location: "India",
-    featured: false
-  },
-
-  {
-    id: "birds-04",
-    file: "images/portfolio/birds/birds-04.jpeg",
-    category: "Birds",
-    title: "Birds — selected work",
-    location: "India",
-    featured: false
-  },
-
-  {
-    id: "birds-05",
-    file: "images/portfolio/birds/birds-05.jpeg",
-    category: "Birds",
-    title: "Birds — selected work",
-    location: "India",
-    featured: false
-  },
+  
   
   {
     id: "landscapes-02",
