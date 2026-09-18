@@ -62,6 +62,15 @@ window.photos = [
     location: "India",
     featured: false
   },
+  
+  {
+    id: "butterflies-03",
+    file: "images/portfolio/butterflies/butterflies-03.jpg",
+    category: "Butterflies",
+    title: "Butterflies — selected work",
+    location: "India",
+    featured: false
+  },
 
   {
     id: "landscapes-01",
