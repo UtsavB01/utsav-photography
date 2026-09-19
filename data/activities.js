@@ -107,7 +107,7 @@ window.activities = [
     title: "Campus Butterfly Walk",
     date: "September 2026",
     year: "2026",
-    alt: "Campus Buterfly Walk poster — September 2026",
+    alt: "Campus Butterfly Walk poster — September 2026",
     featured: false
   }
 
