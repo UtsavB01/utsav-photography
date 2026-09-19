@@ -99,6 +99,16 @@ window.activities = [
     year: "2026",
     alt: "Campus Bird Walk poster — September 2026",
     featured: false
+  },
+
+  {
+    id: "butterfly-walk-september-2026",
+    file: "images/activities/2026/Butterfly_Walk_20_Sept_2026.png",
+    title: "Campus Butterfly Walk",
+    date: "September 2026",
+    year: "2026",
+    alt: "Campus Buterfly Walk poster — September 2026",
+    featured: false
   }
 
 ];
