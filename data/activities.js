@@ -97,7 +97,7 @@ window.activities = [
     title: "Campus Bird Walk",
     date: "September 2026",
     year: "2026",
-    alt: "Campus Bird Walk poster — September 2026",
+    alt: "Campus Bird Walk 2 poster — September 2026",
     featured: false
   },
 
@@ -107,7 +107,7 @@ window.activities = [
     title: "Campus Butterfly Walk",
     date: "September 2026",
     year: "2026",
-    alt: "Campus Butterfly Walk poster — September 2026",
+    alt: "Campus Butterfly Walk 2 poster — September 2026",
     featured: false
   }
 
