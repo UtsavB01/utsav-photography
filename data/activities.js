@@ -92,7 +92,7 @@ window.activities = [
   },
 
   {
-    id: "bird-walk-september-2026",
+    id: "bird-walk2-september-2026",
     file: "images/activities/2026/IISc_Bird_walk_19thSept2026_Final.png",
     title: "Campus Bird Walk",
     date: "September 2026",
@@ -102,7 +102,7 @@ window.activities = [
   },
 
   {
-    id: "butterfly-walk-september-2026",
+    id: "butterfly-walk2-september-2026",
     file: "images/activities/2026/Butterfly_Walk_20_Sept_2026.png",
     title: "Campus Butterfly Walk",
     date: "September 2026",
