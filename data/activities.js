@@ -109,6 +109,16 @@ window.activities = [
     year: "2026",
     alt: "Campus Butterfly Walk 2 poster — September 2026",
     featured: false
+  },
+
+  {
+    id: "nature-walk-september-2026",
+    file: "images/activities/2026/IISc_Nature_walk_26thSept2026_reduced.png",
+    title: "Campus Nature Walk",
+    date: "September 2026",
+    year: "2026",
+    alt: "Campus Nature Walk poster — September 2026",
+    featured: false
   }
 
 ];
