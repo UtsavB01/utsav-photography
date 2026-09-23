@@ -22,7 +22,7 @@ window.photos = [
     id: "birds-01",
     file: "images/portfolio/birds/birds-01.jpg",
     category: "Birds",
-    title: "Birds — selected work",
+    title: "Spotted Owlet",
     location: "India",
     featured: true
   },
@@ -31,7 +31,7 @@ window.photos = [
     id: "birds-02",
     file: "images/portfolio/birds/birds-02.jpg",
     category: "Birds",
-    title: "Birds — selected work",
+    title: "Jungle Myna",
     location: "India",
     featured: false
   },
@@ -40,7 +40,7 @@ window.photos = [
     id: "birds-03",
     file: "images/portfolio/birds/birds-03.jpg",
     category: "Birds",
-    title: "Birds — selected work",
+    title: "Spotted Owlet",
     location: "India",
     featured: false
   },
@@ -49,7 +49,7 @@ window.photos = [
     id: "birds-04",
     file: "images/portfolio/birds/birds-04.jpeg",
     category: "Birds",
-    title: "Birds — selected work",
+    title: "Oriental Magpie-Robin",
     location: "India",
     featured: false
   },
@@ -58,7 +58,7 @@ window.photos = [
     id: "birds-05",
     file: "images/portfolio/birds/birds-05.jpeg",
     category: "Birds",
-    title: "Birds — selected work",
+    title: "Common Myna",
     location: "India",
     featured: false
   },
@@ -67,7 +67,7 @@ window.photos = [
     id: "mammals-01",
     file: "images/portfolio/mammals/mammals-01.jpg",
     category: "Mammals",
-    title: "Mammals — selected work",
+    title: "Three-striped Palm Squirrel",
     location: "India",
     featured: true
   },
@@ -76,7 +76,7 @@ window.photos = [
     id: "butterflies-01",
     file: "images/portfolio/butterflies/butterflies-01.jpg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Wanderer",
     location: "India",
     featured: true
   },
@@ -85,7 +85,7 @@ window.photos = [
     id: "butterflies-02",
     file: "images/portfolio/butterflies/butterflies-02.jpg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Three-spotted Grass Yellow",
     location: "India",
     featured: false
   },
@@ -94,7 +94,7 @@ window.photos = [
     id: "butterflies-03",
     file: "images/portfolio/butterflies/butterflies-03.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Grass Demon",
     location: "India",
     featured: false
   },
@@ -103,7 +103,7 @@ window.photos = [
     id: "butterflies-04",
     file: "images/portfolio/butterflies/butterflies-04.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Tawny Coster",
     location: "India",
     featured: false
   },
@@ -111,7 +111,7 @@ window.photos = [
     id: "butterflies-05",
     file: "images/portfolio/butterflies/butterflies-05.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Indian Blue Mormon",
     location: "India",
     featured: false
   },
@@ -119,7 +119,7 @@ window.photos = [
     id: "butterflies-06",
     file: "images/portfolio/butterflies/butterflies-06.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Dark Blue Tiger",
     location: "India",
     featured: false
   },
@@ -127,7 +127,7 @@ window.photos = [
     id: "butterflies-07",
     file: "images/portfolio/butterflies/butterflies-07.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Plains Cupid",
     location: "India",
     featured: false
   },
@@ -135,7 +135,7 @@ window.photos = [
     id: "butterflies-08",
     file: "images/portfolio/butterflies/butterflies-08.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Wanderer",
     location: "India",
     featured: false
   },
@@ -143,7 +143,7 @@ window.photos = [
     id: "butterflies-09",
     file: "images/portfolio/butterflies/butterflies-09.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Red Flash",
     location: "India",
     featured: false
   },
@@ -151,7 +151,7 @@ window.photos = [
     id: "butterflies-10",
     file: "images/portfolio/butterflies/butterflies-10.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Forget-Me-Not",
     location: "India",
     featured: false
   },
@@ -159,7 +159,7 @@ window.photos = [
     id: "butterflies-11",
     file: "images/portfolio/butterflies/butterflies-11.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Cerulean",
     location: "India",
     featured: false
   },
@@ -167,7 +167,7 @@ window.photos = [
     id: "butterflies-12",
     file: "images/portfolio/butterflies/butterflies-12.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Pierrot",
     location: "India",
     featured: false
   },
@@ -175,7 +175,7 @@ window.photos = [
     id: "butterflies-13",
     file: "images/portfolio/butterflies/butterflies-13.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Psyche",
     location: "India",
     featured: false
   },
@@ -183,7 +183,7 @@ window.photos = [
     id: "butterflies-14",
     file: "images/portfolio/butterflies/butterflies-14.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Wanderer",
     location: "India",
     featured: false
   },
@@ -191,7 +191,7 @@ window.photos = [
     id: "butterflies-15",
     file: "images/portfolio/butterflies/butterflies-15.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Apefly",
     location: "India",
     featured: false
   },
@@ -199,7 +199,7 @@ window.photos = [
     id: "butterflies-16",
     file: "images/portfolio/butterflies/butterflies-16.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Grass Yellow",
     location: "India",
     featured: false
   },
@@ -207,7 +207,7 @@ window.photos = [
     id: "butterflies-17",
     file: "images/portfolio/butterflies/butterflies-17.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Chestnut Bob",
     location: "India",
     featured: false
   },
@@ -215,7 +215,7 @@ window.photos = [
     id: "butterflies-18",
     file: "images/portfolio/butterflies/butterflies-18.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Chestnut-streaked Sailer",
     location: "India",
     featured: false
   },
@@ -223,7 +223,7 @@ window.photos = [
     id: "butterflies-19",
     file: "images/portfolio/butterflies/butterflies-19.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Common Pierrot",
     location: "India",
     featured: false
   },
@@ -231,7 +231,16 @@ window.photos = [
     id: "butterflies-20",
     file: "images/portfolio/butterflies/butterflies-20.jpeg",
     category: "Butterflies",
-    title: "Butterflies — selected work",
+    title: "Plain Tiger Butterfly",
+    location: "India",
+    featured: false
+  },
+
+  {
+    id: "butterflies-21",
+    file: "images/portfolio/butterflies/butterflies-21.jpeg",
+    category: "Butterflies",
+    title: "Common Pierrot",
     location: "India",
     featured: false
   },
@@ -240,7 +249,7 @@ window.photos = [
     id: "landscapes-01",
     file: "images/portfolio/landscapes/landscapes-01.jpg",
     category: "Landscapes",
-    title: "Landscapes — selected work",
+    title: "IISc Campus, Bengaluru, India",
     location: "India",
     featured: true
   },
@@ -249,7 +258,7 @@ window.photos = [
     id: "macro-01",
     file: "images/portfolio/macro/macro-01.jpg",
     category: "Macro",
-    title: "Macro — selected work",
+    title: "Psyche",
     location: "India",
     featured: true
   },
@@ -258,7 +267,7 @@ window.photos = [
     id: "macro-02",
     file: "images/portfolio/macro/macro-02.jpg",
     category: "Macro",
-    title: "Macro — selected work",
+    title: "Emerald Small Carpenter",
     location: "India",
     featured: false
   },
@@ -267,7 +276,7 @@ window.photos = [
     id: "night-01",
     file: "images/portfolio/night/night-01.jpg",
     category: "Night",
-    title: "Night — selected work",
+    title: "Mysore Slender Loris",
     location: "India",
     featured: true
   },
@@ -276,18 +285,16 @@ window.photos = [
     id: "night-02",
     file: "images/portfolio/night/night-02.jpeg",
     category: "Night",
-    title: "Night — selected work",
+    title: "Indian Scops-Owl",
     location: "India",
     featured: false
   },
-  
-  
-  
+    
   {
     id: "landscapes-02",
     file: "images/portfolio/landscapes/landscapes-02.jpg",
     category: "Landscapes",
-    title: "Landscapes — selected work",
+    title: "Chilika Lake in Odisha, India ",
     location: "India",
     featured: false
   }
