@@ -119,6 +119,17 @@ window.activities = [
     year: "2026",
     alt: "Campus Nature Walk poster — September 2026",
     featured: false
-  }
+  },
+
+  {
+    id: "nature-walk-september-2026",
+    file: "images/activities/2026/IISc_Bat_walk_27thSept2026-reduced.png",
+    title: "Campus Bat Walk",
+    date: "September 2026",
+    year: "2026",
+    alt: "Campus Bat Walk poster — September 2026",
+    featured: false
+  }  
+  
 
 ];
