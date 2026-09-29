@@ -25,7 +25,7 @@ window.activities = [
   id: "GP_bat-walk-september-2026",
   file: "images/activities/2026/Group_Photo_Bat_walk_27th_Sept2026.jpeg",
   title: "Campus Bat Walk Group Photo",
-  date: "27th September 2026",
+  date: "September 2026",
   year: "2026",
   alt: "Campus Bat Walk Group Photo — September 2026",
   featured: false
