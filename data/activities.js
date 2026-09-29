@@ -38,7 +38,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Campus Nature Walk poster — September 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -48,7 +48,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Campus Nature Walk poster Group Photo — September 2026",
-    featured: false
+    featured: true
   },
   
   {
@@ -98,7 +98,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Campus Bird Walk poster — September 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -108,7 +108,7 @@ window.activities = [
     date: "September 2026",
     year: "2026",
     alt: "Campus Bird Walk Group Photo — September 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -198,7 +198,7 @@ window.activities = [
     date: "February 2026",
     year: "2026",
     alt: "IISc Campus Bird Count poster — February 2026",
-    featured: false
+    featured: true
   },
 
   {
@@ -208,7 +208,7 @@ window.activities = [
     date: "February 2026",
     year: "2026",
     alt: "IISc Campus Bird Count Group Photo — February 2026",
-    featured: false
+    featured: true
   }
 
 ];
