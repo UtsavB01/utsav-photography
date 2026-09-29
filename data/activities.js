@@ -21,6 +21,16 @@ window.activities = [
   featured: false
 },
 
+  {
+  id: "GP_bat-walk-september-2026",
+  file: "images/activities/2026/Group_Photo_Bat_walk_27th_Sept2026.jpeg",
+  title: "Campus Bat Walk Group Photo",
+  date: "27th September 2026",
+  year: "2026",
+  alt: "Campus Bat Walk Group Photo — September 2026",
+  featured: false
+},
+  
 {
   id: "nature-walk-september-2026",
   file: "images/activities/2026/IISc_Nature_walk_26thSept2026_reduced.png",
@@ -78,7 +88,7 @@ window.activities = [
   date: "September 2026",
   year: "2026",
   alt: "Butterfly Walk poster — September 2026",
-  featured: true
+  featured: 
 },
 
 {
@@ -88,7 +98,7 @@ window.activities = [
   date: "August 2026",
   year: "2026",
   alt: "Campus Bird Walk poster — August 2026",
-  featured: true
+  featured: 
 },
 
 {
@@ -98,7 +108,7 @@ window.activities = [
   date: "July 2026",
   year: "2026",
   alt: "Insect Walk poster — July 2026",
-  featured: true
+  featured: 
 },
 
 {
@@ -108,7 +118,7 @@ window.activities = [
   date: "July 2026",
   year: "2026",
   alt: "Loris Walk poster — July 2026",
-  featured: true
+  featured: 
 },
 
 {
@@ -118,7 +128,7 @@ window.activities = [
   date: "April 2026",
   year: "2026",
   alt: "Tree Walk poster — April 2026",
-  featured: true
+  featured: 
 },
 
 {
@@ -128,7 +138,7 @@ window.activities = [
   date: "February 2026",
   year: "2026",
   alt: "IISc Campus Bird Count poster — February 2026",
-  featured: true
+  featured: 
 } 
   
 
